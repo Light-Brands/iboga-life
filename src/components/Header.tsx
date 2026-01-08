@@ -99,7 +99,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-forest-deep/98 backdrop-blur-lg border-t border-sacred-gold/20 transition-all duration-300 ${
+        className={`lg:hidden absolute top-full left-0 right-0 bg-forest-deep border-t border-sacred-gold/20 transition-all duration-300 ${
           isMobileMenuOpen
             ? 'opacity-100 visible translate-y-0'
             : 'opacity-0 invisible -translate-y-4'
