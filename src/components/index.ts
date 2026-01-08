@@ -12,3 +12,9 @@ export { Quote } from './ui/Quote';
 export { FeatureCard } from './ui/FeatureCard';
 export { TestimonialCard } from './ui/TestimonialCard';
 export { ProcessStep } from './ui/ProcessStep';
+export {
+  ImagePlaceholder,
+  HeroImagePlaceholder,
+  PortraitPlaceholder,
+  InlineImagePlaceholder,
+} from './ui/ImagePlaceholder';

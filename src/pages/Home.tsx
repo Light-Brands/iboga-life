@@ -17,6 +17,10 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { FeatureCard } from '../components/ui/FeatureCard';
 import { TestimonialCard } from '../components/ui/TestimonialCard';
 import { Quote } from '../components/ui/Quote';
+import {
+  ImagePlaceholder,
+  PortraitPlaceholder,
+} from '../components/ui/ImagePlaceholder';
 
 const healingAreas = [
   {
@@ -82,6 +86,7 @@ export const Home: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
+      {/* 📍 IMAGE: home-hero - Sacred fire ceremony at dusk with warm golden light */}
       <Hero
         subtitle="Welcome to Iboga Life Change"
         title="Transform Your Life with the Power of Iboga"
@@ -90,6 +95,7 @@ export const Home: React.FC = () => {
         secondaryCta={{ label: 'Learn About Iboga', to: '/iboga' }}
         showScrollIndicator
         size="full"
+        backgroundImage="/images/home-hero.jpg"
       />
 
       {/* Introduction Section */}
@@ -121,7 +127,17 @@ export const Home: React.FC = () => {
                 authentic and awakened self.
               </p>
             </div>
-            <div className="mt-8 flex flex-wrap gap-4">
+
+            {/* 📍 IMAGE: home-ceremony-space */}
+            <ImagePlaceholder
+              id="home-ceremony-space"
+              alt="Sacred ceremony space with natural elements and soft lighting"
+              aspect="landscape"
+              variant="light"
+              className="mt-8 mb-6"
+            />
+
+            <div className="flex flex-wrap gap-4">
               <Link to="/about" className="btn-primary">
                 Meet Jay Nzingo
               </Link>
@@ -226,6 +242,22 @@ export const Home: React.FC = () => {
             <h2 className="font-accent text-h2 text-cream mb-8">
               Meet Jay Nzingo
             </h2>
+          </motion.div>
+
+          {/* 📍 IMAGE: home-jay-portrait */}
+          <motion.div
+            className="flex justify-center mb-10"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <PortraitPlaceholder
+              id="home-jay-portrait"
+              alt="Jay Nzingo - Iboga provider and spiritual guide"
+              size="xl"
+              variant="earth"
+            />
           </motion.div>
 
           <motion.div
