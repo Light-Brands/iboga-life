@@ -20,6 +20,7 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { ProcessStep } from '../components/ui/ProcessStep';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
+import { ImagePlaceholder } from '../components/ui/ImagePlaceholder';
 
 const processSteps = [
   {
@@ -117,11 +118,13 @@ export const Journey: React.FC = () => {
   return (
     <>
       {/* Hero */}
+      {/* 📍 IMAGE: journey-hero - Path through forest with light breaking through */}
       <Hero
         subtitle="The Process"
         title="Your Healing Journey"
         description="From first conversation to lasting transformation—understand what to expect every step of the way."
         size="large"
+        backgroundImage="/images/journey-hero.jpg"
       />
 
       {/* Introduction */}
@@ -325,6 +328,15 @@ export const Journey: React.FC = () => {
             <p className="text-cream/70 font-primary text-lg">
               The ceremony is sacred space, held with reverence and care.
             </p>
+
+            {/* 📍 IMAGE: journey-ceremony-space */}
+            <ImagePlaceholder
+              id="journey-ceremony-space"
+              alt="Sacred ceremony space prepared for healing work"
+              aspect="wide"
+              variant="earth"
+              className="mt-8 max-w-2xl mx-auto"
+            />
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">

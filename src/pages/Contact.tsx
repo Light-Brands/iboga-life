@@ -15,6 +15,7 @@ import {
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
+import { ImagePlaceholder } from '../components/ui/ImagePlaceholder';
 
 const consultationSteps = [
   {
@@ -98,11 +99,13 @@ export const Contact: React.FC = () => {
   return (
     <>
       {/* Hero */}
+      {/* 📍 IMAGE: contact-hero - Welcoming natural scene, open path or doorway */}
       <Hero
         subtitle="Connect"
         title="Begin Your Journey"
         description="That first step takes real courage. Reach out, and let's have an honest conversation about where you are."
         size="medium"
+        backgroundImage="/images/contact-hero.jpg"
       />
 
       {/* Personal Message */}
@@ -117,6 +120,16 @@ export const Contact: React.FC = () => {
             <h2 className="font-accent text-h2 text-forest-deep mb-6">
               Congratulations on Making the First Step
             </h2>
+
+            {/* 📍 IMAGE: contact-connection */}
+            <ImagePlaceholder
+              id="contact-connection"
+              alt="Hands reaching out in connection and support"
+              aspect="wide"
+              variant="light"
+              className="mb-8 max-w-xl mx-auto"
+            />
+
             <div className="space-y-6 text-bark font-primary text-lg leading-relaxed">
               <p>
                 Reaching out isn't easy. It means something inside you knows there's

@@ -19,6 +19,7 @@ import { Section } from '../components/ui/Section';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
+import { ImagePlaceholder } from '../components/ui/ImagePlaceholder';
 
 const physicalBenefits = [
   { icon: RefreshCcw, label: 'Cellular detoxification' },
@@ -105,12 +106,14 @@ export const Iboga: React.FC = () => {
   return (
     <>
       {/* Hero */}
+      {/* 📍 IMAGE: iboga-hero - Iboga plant/roots with mystical lighting */}
       <Hero
         subtitle="Sacred Plant Medicine"
         title="Discover the Healing Power of Iboga"
         description="An ancient medicine from the Bwiti tradition, offering transformative healing for mind, body, and spirit."
         primaryCta={{ label: 'Begin Your Journey', to: '/contact' }}
         size="large"
+        backgroundImage="/images/iboga-hero.jpg"
       />
 
       {/* Introduction */}
@@ -127,6 +130,23 @@ export const Iboga: React.FC = () => {
             <h2 className="font-accent text-h2 text-forest-deep mb-8">
               The Tree of Knowledge
             </h2>
+          </motion.div>
+
+          {/* 📍 IMAGE: iboga-plant */}
+          <motion.div
+            className="mb-10"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <ImagePlaceholder
+              id="iboga-plant"
+              alt="The Iboga plant (Tabernanthe iboga) with its distinctive leaves and roots"
+              aspect="wide"
+              variant="light"
+              className="max-w-2xl mx-auto"
+            />
           </motion.div>
 
           <motion.div
@@ -297,6 +317,16 @@ export const Iboga: React.FC = () => {
             <h2 className="font-accent text-h2 text-cream mb-6">
               The Bwiti Tradition
             </h2>
+
+            {/* 📍 IMAGE: iboga-bwiti-ceremony */}
+            <ImagePlaceholder
+              id="iboga-bwiti-ceremony"
+              alt="Traditional Bwiti ceremony with sacred fire and tribal elements"
+              aspect="landscape"
+              variant="earth"
+              className="mb-6"
+            />
+
             <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed">
               <p>
                 The Bwiti tradition originates from Gabon, West Africa, where Iboga has

@@ -16,6 +16,10 @@ import { Section } from '../components/ui/Section';
 import { Quote } from '../components/ui/Quote';
 import { Card } from '../components/ui/Card';
 import { TestimonialCard } from '../components/ui/TestimonialCard';
+import {
+  ImagePlaceholder,
+  PortraitPlaceholder,
+} from '../components/ui/ImagePlaceholder';
 
 const coreValues = [
   {
@@ -89,11 +93,13 @@ export const About: React.FC = () => {
   return (
     <>
       {/* Hero */}
+      {/* 📍 IMAGE: about-hero - Jay in nature or ceremonial setting, powerful presence */}
       <Hero
         subtitle="About Jay Nzingo"
         title="Warrior Spirit, Compassionate Guide"
         description="Traditionally trained Iboga Bwiti provider, initiated under 10th-generation Shaman Moughenda Mikala in Gabon, Africa."
         size="large"
+        backgroundImage="/images/about-hero.jpg"
       />
 
       {/* Introduction */}
@@ -111,6 +117,17 @@ export const About: React.FC = () => {
             <h2 className="font-accent text-h2 text-forest-deep mb-6">
               From Darkness to Light
             </h2>
+
+            {/* 📍 IMAGE: about-jay-formal */}
+            <div className="flex justify-center mb-8">
+              <PortraitPlaceholder
+                id="about-jay-formal"
+                alt="Jay Nzingo - formal portrait showing strength and compassion"
+                size="xl"
+                variant="light"
+              />
+            </div>
+
             <p className="text-lead text-bark max-w-2xl mx-auto">
               Jay's path to Iboga began during one of the most challenging times of
               his life. After struggling with addiction for over twenty years—caught in
@@ -206,6 +223,16 @@ export const About: React.FC = () => {
             <h2 className="font-accent text-h2 text-forest-deep mb-6">
               Training in Gabon, Africa
             </h2>
+
+            {/* 📍 IMAGE: about-gabon-temple */}
+            <ImagePlaceholder
+              id="about-gabon-temple"
+              alt="Sacred Bwiti temple in Gabon surrounded by lush forest"
+              aspect="landscape"
+              variant="light"
+              className="mb-6"
+            />
+
             <div className="space-y-6 text-bark font-primary text-body leading-relaxed">
               <p>
                 Just two months after his life-changing first ceremony, Jay's calling led
@@ -252,8 +279,14 @@ export const About: React.FC = () => {
           >
             <Card variant="sacred">
               <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                  <TreeDeciduous className="w-10 h-10 text-sacred-gold" />
+                {/* 📍 IMAGE: about-moughenda-portrait */}
+                <div className="flex justify-center mb-6">
+                  <PortraitPlaceholder
+                    id="about-moughenda-portrait"
+                    alt="Shaman Moughenda Mikala - 10th generation Bwiti shaman"
+                    size="lg"
+                    variant="dark"
+                  />
                 </div>
                 <h3 className="font-accent text-xl text-cream mb-4">
                   Shaman Moughenda Mikala
