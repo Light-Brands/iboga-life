@@ -1,0 +1,14 @@
+# Exclude design system reference folder
+design-system-v2/
+
+# Exclude documentation and design files
+*.md
+!README.md
+
+# Exclude git files
+.git/
+.gitignore
+
+# Exclude editor configs
+.idea/
+.vscode/

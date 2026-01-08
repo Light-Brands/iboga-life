@@ -12,7 +12,6 @@ import {
   AlertTriangle,
   CheckCircle,
   XCircle,
-  ArrowRight,
   Phone,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
