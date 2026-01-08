@@ -16,10 +16,6 @@ import { Section } from '../components/ui/Section';
 import { Quote } from '../components/ui/Quote';
 import { Card } from '../components/ui/Card';
 import { TestimonialCard } from '../components/ui/TestimonialCard';
-import {
-  ImagePlaceholder,
-  PortraitPlaceholder,
-} from '../components/ui/ImagePlaceholder';
 
 const coreValues = [
   {
@@ -118,13 +114,12 @@ export const About: React.FC = () => {
               From Darkness to Light
             </h2>
 
-            {/* 📍 IMAGE: about-jay-formal */}
+            {/* Jay formal portrait */}
             <div className="flex justify-center mb-8">
-              <PortraitPlaceholder
-                id="about-jay-formal"
+              <img
+                src="/images/about-jay-formal.jpg"
                 alt="Jay Nzingo - formal portrait showing strength and compassion"
-                size="xl"
-                variant="light"
+                className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-lg"
               />
             </div>
 
@@ -224,13 +219,11 @@ export const About: React.FC = () => {
               Training in Gabon, Africa
             </h2>
 
-            {/* 📍 IMAGE: about-gabon-temple */}
-            <ImagePlaceholder
-              id="about-gabon-temple"
+            {/* Gabon temple image */}
+            <img
+              src="/images/about-gabon-temple.jpg"
               alt="Sacred Bwiti temple in Gabon surrounded by lush forest"
-              aspect="landscape"
-              variant="light"
-              className="mb-6"
+              className="mb-6 w-full rounded-sacred object-cover aspect-[4/3]"
             />
 
             <div className="space-y-6 text-bark font-primary text-body leading-relaxed">
@@ -279,13 +272,12 @@ export const About: React.FC = () => {
           >
             <Card variant="sacred">
               <div className="text-center">
-                {/* 📍 IMAGE: about-moughenda-portrait */}
+                {/* Moughenda portrait */}
                 <div className="flex justify-center mb-6">
-                  <PortraitPlaceholder
-                    id="about-moughenda-portrait"
+                  <img
+                    src="/images/about-moughenda-portrait.jpg"
                     alt="Shaman Moughenda Mikala - 10th generation Bwiti shaman"
-                    size="lg"
-                    variant="dark"
+                    className="w-32 h-32 rounded-full object-cover border-4 border-sacred-gold/30"
                   />
                 </div>
                 <h3 className="font-accent text-xl text-cream mb-4">

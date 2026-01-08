@@ -17,10 +17,6 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { FeatureCard } from '../components/ui/FeatureCard';
 import { TestimonialCard } from '../components/ui/TestimonialCard';
 import { Quote } from '../components/ui/Quote';
-import {
-  ImagePlaceholder,
-  PortraitPlaceholder,
-} from '../components/ui/ImagePlaceholder';
 
 const healingAreas = [
   {
@@ -128,13 +124,11 @@ export const Home: React.FC = () => {
               </p>
             </div>
 
-            {/* 📍 IMAGE: home-ceremony-space */}
-            <ImagePlaceholder
-              id="home-ceremony-space"
+            {/* Sacred ceremony space image */}
+            <img
+              src="/images/home-ceremony-space.jpg"
               alt="Sacred ceremony space with natural elements and soft lighting"
-              aspect="landscape"
-              variant="light"
-              className="mt-8 mb-6"
+              className="mt-8 mb-6 w-full rounded-sacred object-cover aspect-[4/3]"
             />
 
             <div className="flex flex-wrap gap-4">
@@ -244,7 +238,7 @@ export const Home: React.FC = () => {
             </h2>
           </motion.div>
 
-          {/* 📍 IMAGE: home-jay-portrait */}
+          {/* Jay portrait */}
           <motion.div
             className="flex justify-center mb-10"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -252,11 +246,10 @@ export const Home: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <PortraitPlaceholder
-              id="home-jay-portrait"
+            <img
+              src="/images/home-jay-portrait.jpg"
               alt="Jay Nzingo - Iboga provider and spiritual guide"
-              size="xl"
-              variant="earth"
+              className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-gold-glow"
             />
           </motion.div>
 

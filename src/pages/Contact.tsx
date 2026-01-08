@@ -15,7 +15,6 @@ import {
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
-import { ImagePlaceholder } from '../components/ui/ImagePlaceholder';
 
 const consultationSteps = [
   {
@@ -121,13 +120,11 @@ export const Contact: React.FC = () => {
               Congratulations on Making the First Step
             </h2>
 
-            {/* 📍 IMAGE: contact-connection */}
-            <ImagePlaceholder
-              id="contact-connection"
+            {/* Connection image */}
+            <img
+              src="/images/contact-connection.jpg"
               alt="Hands reaching out in connection and support"
-              aspect="wide"
-              variant="light"
-              className="mb-8 max-w-xl mx-auto"
+              className="mb-8 max-w-xl mx-auto w-full rounded-sacred object-cover aspect-video"
             />
 
             <div className="space-y-6 text-bark font-primary text-lg leading-relaxed">

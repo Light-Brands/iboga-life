@@ -20,7 +20,6 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { ProcessStep } from '../components/ui/ProcessStep';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
-import { ImagePlaceholder } from '../components/ui/ImagePlaceholder';
 
 const processSteps = [
   {
@@ -329,13 +328,11 @@ export const Journey: React.FC = () => {
               The ceremony is sacred space, held with reverence and care.
             </p>
 
-            {/* 📍 IMAGE: journey-ceremony-space */}
-            <ImagePlaceholder
-              id="journey-ceremony-space"
+            {/* Ceremony space image */}
+            <img
+              src="/images/journey-ceremony-space.jpg"
               alt="Sacred ceremony space prepared for healing work"
-              aspect="wide"
-              variant="earth"
-              className="mt-8 max-w-2xl mx-auto"
+              className="mt-8 max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-video"
             />
           </motion.div>
 

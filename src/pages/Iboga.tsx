@@ -19,7 +19,6 @@ import { Section } from '../components/ui/Section';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
-import { ImagePlaceholder } from '../components/ui/ImagePlaceholder';
 
 const physicalBenefits = [
   { icon: RefreshCcw, label: 'Cellular detoxification' },
@@ -132,7 +131,7 @@ export const Iboga: React.FC = () => {
             </h2>
           </motion.div>
 
-          {/* 📍 IMAGE: iboga-plant */}
+          {/* Iboga plant image */}
           <motion.div
             className="mb-10"
             initial={{ opacity: 0, scale: 0.95 }}
@@ -140,12 +139,10 @@ export const Iboga: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <ImagePlaceholder
-              id="iboga-plant"
+            <img
+              src="/images/iboga-plant.jpg"
               alt="The Iboga plant (Tabernanthe iboga) with its distinctive leaves and roots"
-              aspect="wide"
-              variant="light"
-              className="max-w-2xl mx-auto"
+              className="max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-video"
             />
           </motion.div>
 
@@ -318,13 +315,11 @@ export const Iboga: React.FC = () => {
               The Bwiti Tradition
             </h2>
 
-            {/* 📍 IMAGE: iboga-bwiti-ceremony */}
-            <ImagePlaceholder
-              id="iboga-bwiti-ceremony"
+            {/* Bwiti ceremony image */}
+            <img
+              src="/images/iboga-bwiti-ceremony.jpg"
               alt="Traditional Bwiti ceremony with sacred fire and tribal elements"
-              aspect="landscape"
-              variant="earth"
-              className="mb-6"
+              className="mb-6 w-full rounded-sacred object-cover aspect-[4/3]"
             />
 
             <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed">
