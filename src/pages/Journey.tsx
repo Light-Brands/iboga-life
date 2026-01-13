@@ -13,11 +13,16 @@ import {
   CheckCircle,
   XCircle,
   Phone,
+  Sunrise,
+  Moon,
+  Sparkles,
+  Calendar,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { ProcessStep } from '../components/ui/ProcessStep';
+import { ScheduleDay } from '../components/ui/ScheduleDay';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
 
@@ -109,6 +114,65 @@ const preparationCategories = [
       'Prepare comfortable clothing',
       'Inform someone you trust about your journey',
       'Complete all pre-ceremony requirements',
+    ],
+  },
+];
+
+const retreatSchedule = [
+  {
+    day: 1,
+    title: 'Welcome & Ceremony',
+    icon: Sunrise,
+    activities: [
+      'Welcome and settling in.',
+      'Meet your facilitators and fellow journeyers.',
+      'First sacred Iboga ceremony with full medical supervision and experienced facilitators.',
+    ],
+  },
+  {
+    day: 2,
+    title: 'Recovery',
+    icon: Moon,
+    activities: [
+      'Rest and gentle integration.',
+      'Nourishing meals, nature time, and one-on-one support available.',
+    ],
+  },
+  {
+    day: 3,
+    title: 'Integration',
+    icon: Sparkles,
+    activities: [
+      'Group sharing circles.',
+      'Journaling and processing insights from your experience.',
+      'Visit to Spa.',
+    ],
+  },
+  {
+    day: 4,
+    title: 'Ceremony',
+    icon: Flame,
+    activities: [
+      'Second sacred Iboga ceremony.',
+      'Going deeper with the medicine.',
+    ],
+  },
+  {
+    day: 5,
+    title: 'Recovery',
+    icon: Moon,
+    activities: [
+      'Rest and gentle integration.',
+      'Nourishing meals, nature time, and one-on-one support available.',
+    ],
+  },
+  {
+    day: 6,
+    title: 'Integration & Departure',
+    icon: Calendar,
+    activities: [
+      'Final integration sessions, future planning, and building lasting connections.',
+      'Farewell breakfast and beginning your new chapter.',
     ],
   },
 ];
@@ -395,6 +459,38 @@ export const Journey: React.FC = () => {
             />
           </motion.div>
         </div>
+      </Section>
+
+      {/* Retreat Schedule */}
+      <Section variant="default">
+        <SectionHeading
+          subtitle="6-Day Retreat"
+          title="Your Retreat Schedule"
+          description="A carefully crafted journey of ceremony, recovery, and integration over six transformative days."
+        />
+
+        <div className="max-w-3xl mx-auto bg-forest-deep/50 rounded-sacred p-8 md:p-12">
+          {retreatSchedule.map((day, index) => (
+            <ScheduleDay
+              key={day.day}
+              day={day.day}
+              title={day.title}
+              activities={day.activities}
+              icon={day.icon}
+              isLast={index === retreatSchedule.length - 1}
+              index={index}
+            />
+          ))}
+        </div>
+
+        <motion.p
+          className="text-center text-bark/70 font-primary text-base mt-8 max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          Each retreat is tailored to the needs of participants. The schedule provides structure while allowing space for the medicine to guide the experience.
+        </motion.p>
       </Section>
 
       {/* Safety */}
