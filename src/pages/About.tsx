@@ -22,25 +22,25 @@ const coreValues = [
     icon: Shield,
     title: 'Strength Through Presence',
     description:
-      "Jay's powerful physical presence creates a container of safety, allowing participants to fully surrender to their healing journey. His strength gives others permission to be vulnerable.",
+      "Nzingo's powerful physical presence creates a container of safety, allowing participants to fully surrender to their healing journey. His strength gives others permission to be vulnerable.",
   },
   {
     icon: TreeDeciduous,
     title: "Nature's Wisdom",
     description:
-      'Living in harmony with nature has taught Jay the rhythms of transformation. He brings this primal wisdom to every ceremony, creating space for authentic healing.',
+      'Living in harmony with nature has taught Nzingo the rhythms of transformation. He brings this primal wisdom to every ceremony, creating space for authentic healing.',
   },
   {
     icon: Heart,
     title: 'Warrior Compassion',
     description:
-      'Combining the fierce protection of a warrior with deep compassion, Jay guides each person through their darkest moments into the light of understanding and healing.',
+      'Combining the fierce protection of a warrior with deep compassion, Nzingo guides each person through their darkest moments into the light of understanding and healing.',
   },
   {
     icon: Star,
     title: 'Sacred Responsibility',
     description:
-      'Jay approaches his work with the utmost reverence and responsibility, understanding that he is a guardian of sacred medicine and a guide for souls in transformation.',
+      'Nzingo approaches his work with the utmost reverence and responsibility, understanding that he is a guardian of sacred medicine and a guide for souls in transformation.',
   },
 ];
 
@@ -48,39 +48,39 @@ const timeline = [
   {
     title: 'The Calling',
     content:
-      "After 20+ years trapped in cycles of addiction and self-destruction, Jay reached a point of deep realization: it was time to break free. The pain had become unbearable, and something inside him knew there had to be another way.",
+      "After struggling with addiction for over twenty years—caught in a cycle of destructive and self-sabotaging behaviors—Nzingo reached a point of deep realization: it was time to break free. The pain had become unbearable, and something inside him knew there had to be another way.",
   },
   {
     title: 'The Transformation',
     content:
-      'In 2022, Jay attended his first Iboga ceremony in Cancun, Mexico. The experience was nothing short of miraculous. The medicine didn\'t just heal his wounds—it revealed his purpose as a guardian of ancient wisdom.',
+      'In 2021, Nzingo attended his first Iboga retreat in Cancun, Mexico. The experience transformed his life. The profound wisdom, healing, and clarity he received awakened something powerful within him—an undeniable calling to walk the path of service through the sacred Iboga medicine.',
   },
   {
     title: 'The Training',
     content:
-      'Just two months after his first ceremony, Jay traveled to Gabon, Africa—the birthplace of the Bwiti tradition. There, under the direct guidance of 10th-generation Shaman Moughenda Mikala, he immersed himself in the ancient spiritual, energetic, and healing practices.',
+      'Just two months later, his calling led him to Gabon, Africa—the birthplace of the Bwiti tradition. There, under the direct guidance of 10th-generation Shaman Moughenda Mikala, Nzingo immersed himself in the traditional study of Iboga, learning the ancient spiritual, energetic, and healing practices that have been passed down for generations.',
   },
   {
     title: 'The Mission',
     content:
-      'Upon returning to Canada, Jay founded his own Iboga retreat practice, dedicated to helping others find freedom from their own struggles—whether addiction, trauma, anxiety, depression, or emotional stagnation.',
+      'Upon returning to Canada, Nzingo founded his own Iboga retreat practice, dedicated to helping others find freedom from their own struggles—whether addiction, trauma, anxiety, depression, or emotional stagnation. Through the wisdom of Iboga, he helps people reconnect with their true selves and remember who they are beyond pain and limitation.',
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Jay's presence is like having a guardian angel and a fierce protector all in one. His strength gave me the courage to face my deepest fears.",
+      "Nzingo's presence is like having a guardian angel and a fierce protector all in one. His strength gave me the courage to face my deepest fears.",
     author: 'Ceremony Participant',
   },
   {
     quote:
-      'The combination of Jay\'s physical power and spiritual wisdom created the perfect environment for my transformation. I felt completely safe.',
+      'The combination of Nzingo\'s physical power and spiritual wisdom created the perfect environment for my transformation. I felt completely safe.',
     author: 'Retreat Guest',
   },
   {
     quote:
-      'Jay is like a force of nature - strong, grounded, and deeply connected. His guidance through my Iboga journey was life-changing.',
+      'Nzingo is like a force of nature - strong, grounded, and deeply connected. His guidance through my Iboga journey was life-changing.',
     author: 'Seeker',
   },
 ];
@@ -91,9 +91,9 @@ export const About: React.FC = () => {
       {/* Hero */}
       {/* 📍 IMAGE: about-hero - Jay in nature or ceremonial setting, powerful presence */}
       <Hero
-        subtitle="About Jay Nzingo"
+        subtitle="About Jason Nzingo Gho Majanja"
         title="Warrior Spirit, Compassionate Guide"
-        description="Traditionally trained Iboga Bwiti provider, initiated under 10th-generation Shaman Moughenda Mikala in Gabon, Africa."
+        description="Traditionally trained Iboga Bwiti provider, initiated and trained in 2021 under 10th-generation Shaman Moughenda Mikala in Gabon, Africa."
         size="large"
         backgroundImage="/images/about-hero.jpg"
       />
@@ -108,7 +108,7 @@ export const About: React.FC = () => {
             viewport={{ once: true }}
           >
             <p className="text-sacred-gold font-accent text-sm uppercase tracking-[0.2em] mb-4">
-              Meet Jason "Nzingo Gho Majanja"
+              Meet Jason Nzingo Gho Majanja
             </p>
             <h2 className="font-accent text-h2 text-forest-deep mb-6">
               From Darkness to Light
@@ -118,22 +118,22 @@ export const About: React.FC = () => {
             <div className="flex justify-center mb-8">
               <img
                 src="/images/about-jay-formal.jpg"
-                alt="Jay Nzingo - formal portrait showing strength and compassion"
+                alt="Jason Nzingo Gho Majanja - formal portrait showing strength and compassion"
                 className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-lg"
               />
             </div>
 
             <p className="text-lead text-bark max-w-2xl mx-auto">
-              Jay's path to Iboga began during one of the most challenging times of
+              Nzingo's path to Iboga began during one of the most challenging times of
               his life. After struggling with addiction for over twenty years—caught in
               a cycle of destructive and self-sabotaging behaviors—he reached a point
-              of deep realization.
+              of deep realization: it was time to break free.
             </p>
           </motion.div>
 
           <Quote
             text="I was done with the struggling. I was done with the suffering. I was done with the pain."
-            author="Jay Nzingo"
+            author="Nzingo"
           />
 
           <motion.div
@@ -143,7 +143,7 @@ export const About: React.FC = () => {
             viewport={{ once: true }}
           >
             <p>
-              These words marked the beginning of Jay's transformation. What started as
+              These words marked the beginning of Nzingo's transformation. What started as
               a desperate search for healing became a profound spiritual awakening that
               would reshape not only his life, but the lives of countless others seeking
               freedom from their own darkness.
@@ -151,7 +151,7 @@ export const About: React.FC = () => {
             <p>
               This sacred plant medicine didn't just heal his wounds—it revealed his
               purpose as a guardian of ancient wisdom. From the depths of struggle to
-              the heights of spiritual awakening, Jay's transformation through Iboga
+              the heights of spiritual awakening, Nzingo's transformation through Iboga
               ignited an unbreakable calling to serve this sacred medicine.
             </p>
           </motion.div>
@@ -228,14 +228,14 @@ export const About: React.FC = () => {
 
             <div className="space-y-6 text-bark font-primary text-body leading-relaxed">
               <p>
-                Just two months after his life-changing first ceremony, Jay's calling led
+                Just two months after his life-changing first retreat, Nzingo's calling led
                 him to Gabon, Africa—the birthplace of the Bwiti tradition. There, under
                 the direct guidance of Shaman Moughenda Mikala, he immersed himself in the
                 traditional study of Iboga.
               </p>
               <p>
                 Learning the ancient spiritual, energetic, and healing practices that have
-                been passed down for generations, Jay became initiated into the Missoko
+                been passed down for generations, Nzingo became initiated into the Missoko
                 Bwiti tradition—carrying forward a 10th-generation lineage of sacred
                 knowledge.
               </p>
@@ -286,7 +286,7 @@ export const About: React.FC = () => {
                 <p className="text-cream/70 font-primary leading-relaxed mb-6">
                   A 10th-generation Bwiti shaman from Gabon, Moughenda Mikala is one of
                   the world's most respected keepers of the Iboga tradition. Under his
-                  guidance, Jay learned not just the ceremonies, but the profound
+                  guidance, Nzingo learned not just the ceremonies, but the profound
                   responsibility of serving this sacred medicine.
                 </p>
                 <div className="pt-6 border-t border-sacred-gold/20">
@@ -312,7 +312,7 @@ export const About: React.FC = () => {
             Philosophy & Approach
           </p>
           <h2 className="font-accent text-h2 text-forest-deep mb-6">
-            How Jay Holds Space
+            How Nzingo Holds Space
           </h2>
           <p className="text-lead text-bark max-w-2xl mx-auto">
             Every ceremony is approached with deep reverence and unwavering commitment
@@ -365,8 +365,8 @@ export const About: React.FC = () => {
           </motion.div>
 
           <Quote
-            text="My mission is to be a bridge between the ancient wisdom of plant medicine and the modern world's need for healing. With strength, love, and dedication, I guide souls through their journey of transformation, helping them reclaim their power and purpose."
-            author="Jay Nzingo"
+            text="I'm proud to serve this sacred medicine to those seeking real change in their life. We don't have to stay stuck in our suffering. There is light on the other side—and Iboga helps us find it."
+            author="Nzingo"
             variant="large"
           />
 
@@ -403,7 +403,7 @@ export const About: React.FC = () => {
             Voices of Transformation
           </p>
           <h2 className="font-accent text-h2 text-forest-deep">
-            What People Say About Jay
+            What People Say About Nzingo
           </h2>
         </motion.div>
 
@@ -428,7 +428,7 @@ export const About: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-accent text-h2 text-cream mb-6">
-              Ready to Work with Jay?
+              Ready to Work with Nzingo?
             </h2>
             <p className="text-cream/70 font-primary text-lg mb-10 leading-relaxed">
               If you feel called to experience the transformative power of Iboga with a
