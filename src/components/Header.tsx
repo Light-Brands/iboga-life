@@ -29,6 +29,11 @@ export const Header: React.FC = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  // Scroll to top when clicking navigation links
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const isHomePage = location.pathname === '/';
   const headerBg = isScrolled || !isHomePage
     ? 'bg-forest-deep/95 backdrop-blur-md shadow-lg'
@@ -45,6 +50,7 @@ export const Header: React.FC = () => {
             to="/"
             className="flex items-center gap-3 group"
             aria-label="Iboga Life Change - Home"
+            onClick={scrollToTop}
           >
             <Leaf
               className="w-8 h-8 text-sacred-gold transition-transform duration-500 group-hover:rotate-12"
@@ -69,6 +75,7 @@ export const Header: React.FC = () => {
                 className={`nav-link ${
                   location.pathname === link.path ? 'nav-link-active' : ''
                 }`}
+                onClick={scrollToTop}
               >
                 {link.label}
               </Link>
@@ -76,6 +83,7 @@ export const Header: React.FC = () => {
             <Link
               to="/contact"
               className="btn-primary text-sm py-3 px-6"
+              onClick={scrollToTop}
             >
               Begin Your Journey
             </Link>
@@ -115,6 +123,7 @@ export const Header: React.FC = () => {
                   ? 'text-sacred-gold'
                   : 'text-cream hover:text-sacred-gold'
               } transition-colors`}
+              onClick={scrollToTop}
             >
               {link.label}
             </Link>
@@ -123,6 +132,7 @@ export const Header: React.FC = () => {
             <Link
               to="/contact"
               className="btn-primary w-full text-center"
+              onClick={scrollToTop}
             >
               Begin Your Journey
             </Link>
