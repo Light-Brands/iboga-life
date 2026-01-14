@@ -338,9 +338,14 @@ export const Home: React.FC = () => {
               healing, and authentic living—Jay is here to guide you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/contact" className="btn-primary">
+              <a
+                href="https://calendly.com/ibogalifechange/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
                 Schedule a Consultation
-              </Link>
+              </a>
               <Link
                 to="/journey"
                 className="btn bg-transparent text-cream border-2 border-cream/30 hover:border-sacred-gold hover:text-sacred-gold"
