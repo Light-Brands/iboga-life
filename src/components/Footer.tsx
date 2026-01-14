@@ -109,12 +109,14 @@ export const Footer: React.FC = () => {
 
             {/* CTA */}
             <div className="mt-8">
-              <Link
-                to="/contact"
+              <a
+                href="https://calendly.com/ibogalifechange/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary w-full text-center text-sm"
               >
                 Schedule Consultation
-              </Link>
+              </a>
             </div>
           </div>
         </div>

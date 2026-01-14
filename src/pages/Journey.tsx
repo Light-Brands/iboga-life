@@ -577,9 +577,14 @@ export const Journey: React.FC = () => {
               dialogue about your situation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/contact" className="btn-primary">
+              <a
+                href="https://calendly.com/ibogalifechange/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
                 Schedule a Consultation
-              </Link>
+              </a>
               <a
                 href="tel:+15199842400"
                 className="inline-flex items-center gap-2 text-sacred-gold hover:text-sacred-amber font-secondary uppercase tracking-wider transition-colors"
