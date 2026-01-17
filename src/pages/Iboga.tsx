@@ -152,7 +152,7 @@ const healingCategories = [
       'Awaken to your full potential',
     ],
     expanded:
-      "The Bwiti tradition teaches that everything we need is already within us—we just forget. Iboga helps us remember. Through the ceremony, many experience profound insights about their true nature, their purpose, and their connection to something greater than themselves. This isn't about adopting new beliefs—it's about direct experience and seeing for yourself what lies beyond the stories life has placed on you.",
+      "The Bwiti tradition teaches that everything we need is already within us. We just forget. Iboga helps us remember. Through the ceremony, many experience profound insights about their true nature, their purpose, and their connection to something greater than themselves. This isn't about adopting new beliefs. It's about direct experience and seeing for yourself what lies beyond the stories life has placed on you.",
   },
 ];
 
@@ -218,9 +218,9 @@ export const Iboga: React.FC = () => {
             </p>
             <p>
               Iboga is not a psychedelic in the recreational sense. Instead, it is a
-              teacher — a plant that works with the mind, body, and soul to reveal
+              teacher, a plant that works with the mind, body, and soul to reveal
               truth and create deep, lasting transformation. It shows you what you need
-              to see, not necessarily what you want to see — but always with the
+              to see, not necessarily what you want to see, but always with the
               intention of healing and truth.
             </p>
           </motion.div>
@@ -405,7 +405,7 @@ export const Iboga: React.FC = () => {
         <SectionHeading
           title="How Iboga Works"
           subtitle="Comprehensive Healing"
-          description="Unlike other medicines that might give temporary relief or altered states, Iboga works differently. It shows you the truth—about yourself, about your patterns, about the lies you've been telling yourself."
+          description="Unlike other medicines that might give temporary relief or altered states, Iboga works differently. It shows you the truth: about yourself, about your patterns, about the lies you've been telling yourself."
           light
         />
 
@@ -464,8 +464,8 @@ export const Iboga: React.FC = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          This is not a quick fix. It's not recreational. It's deep, profound work—and
-          it requires readiness, preparation, and proper guidance.
+          This is not a quick fix. It's not recreational. It's deep, profound work,
+          and it requires readiness, preparation, and proper guidance.
         </motion.p>
       </Section>
 
@@ -709,7 +709,7 @@ export const Iboga: React.FC = () => {
                 The Bwiti Tradition is an ancient spiritual path originating from the
                 forests of Gabon, Central Africa, carried for generations by the Fang,
                 Mitsogo, and Apinji peoples. It is not a religion in the Western sense,
-                but a way of life — a lived wisdom rooted in truth, self-knowledge, and
+                but a way of life, a lived wisdom rooted in truth, self-knowledge, and
                 direct experience.
               </p>
               <p>
@@ -735,7 +735,7 @@ export const Iboga: React.FC = () => {
                   The sacred plant medicine Iboga is central within the Bwiti path. It is
                   known as the "Tree of Knowledge," a master teacher that helps individuals
                   reconnect with their soul, confront their truth, and release the burdens
-                  they've been carrying — sometimes for decades or even generations.
+                  they've been carrying, sometimes for decades or even generations.
                 </p>
                 <p>
                   Within the Bwiti, Iboga is not used casually or recreationally. It is

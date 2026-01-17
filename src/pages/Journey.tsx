@@ -31,7 +31,7 @@ const processSteps = [
     icon: MessageCircle,
     title: 'Initial Consultation',
     description:
-      "Your journey begins with an honest conversation. We'll discuss where you are, what you're seeking, and whether Iboga is the right path for you. This call is free, with no pressure—just genuine dialogue about your situation.",
+      "Your journey begins with an honest conversation. We'll discuss where you are, what you're seeking, and whether Iboga is the right path for you. This call is free, with no pressure, just genuine dialogue about your situation.",
   },
   {
     number: 2,
@@ -184,7 +184,7 @@ export const Journey: React.FC = () => {
       <Hero
         subtitle="The Process"
         title="Your Healing Journey"
-        description="From first conversation to lasting transformation—understand what to expect every step of the way."
+        description="From first conversation to lasting transformation, here's what to expect every step of the way."
         size="large"
         backgroundImage="/images/journey-hero.jpg"
       />
@@ -213,7 +213,7 @@ export const Journey: React.FC = () => {
             transition={{ delay: 0.2 }}
           >
             <p>
-              Working with Iboga is a commitment to yourself—a decision to face what
+              Working with Iboga is a commitment to yourself, a decision to face what
               you've been avoiding and step into who you truly are. It requires
               preparation, courage, and follow-through.
             </p>
@@ -225,7 +225,7 @@ export const Journey: React.FC = () => {
           </motion.div>
 
           <Quote
-            text="This isn't about escaping life. It's about returning to it—whole, present, sovereign, and awake."
+            text="This isn't about escaping life. It's about returning to it: whole, present, sovereign, and awake."
             author="Jay Nzingo"
           />
         </div>
@@ -259,7 +259,7 @@ export const Journey: React.FC = () => {
         <SectionHeading
           title="Is This Right For You?"
           subtitle="Honest Reflection"
-          description="Iboga is powerful medicine, but it's not for everyone—and that's okay. Here's help determining if this path is calling you."
+          description="Iboga is powerful medicine, but it's not for everyone, and that's okay. Here's help determining if this path is calling you."
           light
         />
 
@@ -415,7 +415,7 @@ export const Journey: React.FC = () => {
                   providing guidance and support.
                 </p>
                 <p>
-                  Experiences vary widely—some receive vivid visions, others deep
+                  Experiences vary widely. Some receive vivid visions, others deep
                   emotional processing, others profound body healing. The medicine gives
                   each person what they need.
                 </p>
@@ -434,7 +434,7 @@ export const Journey: React.FC = () => {
               <div className="space-y-4 text-cream/80 font-primary leading-relaxed">
                 <p>
                   The days following ceremony are often profound. Many describe feeling
-                  "reset"—clearer, lighter, more connected to themselves. This is when
+                  "reset," clearer, lighter, more connected to themselves. This is when
                   integration work begins.
                 </p>
                 <p>
@@ -572,7 +572,7 @@ export const Journey: React.FC = () => {
             </h2>
             <p className="text-cream/70 font-primary text-lg mb-10 leading-relaxed">
               That first step takes real courage. If you're feeling called to this work,
-              reach out for a conversation. No pressure, no obligation—just honest
+              reach out for a conversation. No pressure, no obligation, just honest
               dialogue about your situation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

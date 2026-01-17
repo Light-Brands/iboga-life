@@ -25,7 +25,7 @@ const healingAreas = [
     icon: Heart,
     title: 'Addiction Recovery',
     description:
-      'Break free from opiates, alcohol, nicotine, and other substances. Iboga addresses addiction at its root—not just the symptom, but the why behind it.',
+      'Break free from opiates, alcohol, nicotine, and other substances. Iboga addresses addiction at its root, not just the symptom, but the why behind it.',
   },
   {
     icon: Brain,
@@ -114,7 +114,7 @@ export const Home: React.FC = () => {
             </h2>
             <div className="space-y-6 text-bark font-primary text-body leading-relaxed">
               <p>
-                Step into an Iboga retreat inspired by the ancient Bwiti tradition — a
+                Step into an Iboga retreat inspired by the ancient Bwiti tradition, a
                 journey designed to awaken your spirit, clear your mind, and strengthen
                 your connection to truth.
               </p>
@@ -164,7 +164,7 @@ export const Home: React.FC = () => {
                 </div>
               </div>
               <Quote
-                text="We don't have to stay stuck in our suffering. There is light on the other side—and Iboga helps us find it."
+                text="We don't have to stay stuck in our suffering. There is light on the other side, and Iboga helps us find it."
                 author="Jay Nzingo"
                 variant="inline"
               />
@@ -192,7 +192,7 @@ export const Home: React.FC = () => {
         <SectionHeading
           subtitle="How Iboga Can Help"
           title="Comprehensive Healing for Mind, Body & Spirit"
-          description="Iboga works on multiple levels, addressing the root causes of suffering—not just the symptoms. This sacred plant medicine has helped countless people find freedom."
+          description="Iboga works on multiple levels, addressing the root causes of suffering, not just the symptoms. This sacred plant medicine has helped countless people find freedom."
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -359,7 +359,7 @@ export const Home: React.FC = () => {
           >
             <p>
               From the depths of 20+ years of addiction to the heights of spiritual
-              awakening—Jay's transformation through Iboga ignited an unbreakable calling
+              awakening, Jay's transformation through Iboga ignited an unbreakable calling
               to serve this sacred medicine.
             </p>
             <p>
@@ -432,7 +432,7 @@ export const Home: React.FC = () => {
             </h2>
             <p className="text-cream/70 font-primary text-lg mb-10 leading-relaxed">
               The door is open. When you're ready to take the first step toward freedom,
-              healing, and authentic living—Jay is here to guide you.
+              healing, and authentic living, Jay is here to guide you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

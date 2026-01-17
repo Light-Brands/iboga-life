@@ -54,22 +54,22 @@ const timeline = [
   {
     title: 'The Calling',
     content:
-      "After struggling with addiction for over twenty years—caught in a cycle of destructive and self-sabotaging behaviors—Nzingo reached a point of deep realization: it was time to break free. The pain had become unbearable, and something inside him knew there had to be another way.",
+      "After struggling with addiction for over twenty years, caught in a cycle of destructive and self-sabotaging behaviors, Nzingo reached a point of deep realization: it was time to break free. The pain had become unbearable, and something inside him knew there had to be another way.",
   },
   {
     title: 'The Transformation',
     content:
-      'In 2021, Nzingo attended his first Iboga retreat in Cancun, Mexico. The experience transformed his life. The profound wisdom, healing, and clarity he received awakened something powerful within him—an undeniable calling to walk the path of service through the sacred Iboga medicine.',
+      'In 2021, Nzingo attended his first Iboga retreat in Cancun, Mexico. The experience transformed his life. The profound wisdom, healing, and clarity he received awakened something powerful within him: an undeniable calling to walk the path of service through the sacred Iboga medicine.',
   },
   {
     title: 'The Training',
     content:
-      'Just two months later, his calling led him to Gabon, Africa—the birthplace of the Bwiti tradition. There, under the direct guidance of 10th-generation Shaman Moughenda Mikala, Nzingo immersed himself in the traditional study of Iboga, learning the ancient spiritual, energetic, and healing practices that have been passed down for generations.',
+      'Just two months later, his calling led him to Gabon, Africa, the birthplace of the Bwiti tradition. There, under the direct guidance of 10th-generation Shaman Moughenda Mikala, Nzingo immersed himself in the traditional study of Iboga, learning the ancient spiritual, energetic, and healing practices that have been passed down for generations.',
   },
   {
     title: 'The Mission',
     content:
-      'Upon returning to Canada, Nzingo founded his own Iboga retreat practice, dedicated to helping others find freedom from their own struggles—whether it be addiction, trauma, anxiety, depression, or emotional stagnation. Through the wisdom of Iboga, he helps people reconnect with their true selves and remember who they are beyond pain and limitation.',
+      'Upon returning to Canada, Nzingo founded his own Iboga retreat practice, dedicated to helping others find freedom from their own struggles, whether it be addiction, trauma, anxiety, depression, or emotional stagnation. Through the wisdom of Iboga, he helps people reconnect with their true selves and remember who they are beyond pain and limitation.',
   },
 ];
 
@@ -131,8 +131,8 @@ export const About: React.FC = () => {
 
             <p className="text-lead text-bark max-w-2xl mx-auto">
               Nzingo's path to Iboga began during one of the most challenging times of
-              his life. After struggling with addiction for over twenty years—caught in
-              a cycle of destructive and self-sabotaging behaviors—he reached a point
+              his life. After struggling with addiction for over twenty years, caught in
+              a cycle of destructive and self-sabotaging behaviors, he reached a point
               of deep realization: it was time to break free.
             </p>
           </motion.div>
@@ -155,7 +155,7 @@ export const About: React.FC = () => {
               freedom from their own darkness.
             </p>
             <p>
-              This sacred plant medicine didn't just heal his wounds—it revealed his
+              This sacred plant medicine didn't just heal his wounds. It revealed his
               purpose as a guardian of ancient wisdom. From the depths of struggle to
               the heights of spiritual awakening, Nzingo's transformation through Iboga
               ignited an unbreakable calling to serve this sacred medicine.
@@ -235,14 +235,14 @@ export const About: React.FC = () => {
             <div className="space-y-6 text-bark font-primary text-body leading-relaxed">
               <p>
                 Just two months after his life-changing first retreat, Nzingo's calling led
-                him to Gabon, Africa—the birthplace of the Bwiti tradition. There, under
+                him to Gabon, Africa, the birthplace of the Bwiti tradition. There, under
                 the direct guidance of Shaman Moughenda Mikala, he immersed himself in the
                 traditional study of Iboga.
               </p>
               <p>
                 Learning the ancient spiritual, energetic, and healing practices that have
                 been passed down for generations, Nzingo became initiated into the Missoko
-                Bwiti tradition—carrying forward a 10th-generation lineage of sacred
+                Bwiti tradition, carrying forward a 10th-generation lineage of sacred
                 knowledge.
               </p>
             </div>
@@ -325,11 +325,11 @@ export const About: React.FC = () => {
             <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed text-left">
               <p>
                 Moughenda is one of the most respected and recognized 10th-generation Bwiti
-                Shamans in the world — a true carrier of ancient wisdom, lineage, and
+                Shamans in the world, a true carrier of ancient wisdom, lineage, and
                 tradition. Born into a long line of Bwiti healers in Gabon, Central Africa,
                 he was raised within the sacred teachings, ceremonies, and responsibilities
                 of the Missoko Bwiti tradition. From a young age, it was clear that his
-                path was not chosen by him — it was chosen for him.
+                path was not chosen by him. It was chosen for him.
               </p>
             </div>
           </motion.div>
@@ -346,7 +346,7 @@ export const About: React.FC = () => {
                 <p className="mb-4">
                   As a 10th-generation shaman, Moughenda stands as a living bridge between
                   the old world and the modern world. He carries a lineage that has been
-                  passed down through centuries — the medicine, the teachings, the rituals,
+                  passed down through centuries: the medicine, the teachings, the rituals,
                   and most importantly, the truth that lies at the heart of the Bwiti tradition.
                 </p>
                 <p>
@@ -381,7 +381,7 @@ export const About: React.FC = () => {
                   </li>
                 </ul>
                 <p className="mt-4">
-                  He has supported thousands of people — from those struggling with addiction
+                  He has supported thousands of people, from those struggling with addiction
                   to those seeking purpose, clarity, healing, or reconnection with their soul.
                   His guidance helps people see themselves clearly, release years of emotional
                   weight, and step into the light of who they truly are.
@@ -390,7 +390,7 @@ export const About: React.FC = () => {
 
               <AccordionItem title="A Pillar of Strength, Wisdom & Compassion" icon={Heart} variant="sacred">
                 <p className="mb-4">
-                  What makes Moughenda truly powerful is not just his lineage — it's his heart.
+                  What makes Moughenda truly powerful is not just his lineage. It's his heart.
                   He teaches through humility, directness, humor, and compassion. He leads with
                   honesty, integrity, and a deep love for humanity. His presence carries both
                   the strength of a warrior and the gentleness of a healer.
@@ -527,7 +527,7 @@ export const About: React.FC = () => {
           </motion.div>
 
           <Quote
-            text="I'm proud to serve this sacred medicine to those seeking real change in their life. We don't have to stay stuck in our suffering. There is light on the other side—and Iboga helps us find it."
+            text="I'm proud to serve this sacred medicine to those seeking real change in their life. We don't have to stay stuck in our suffering. There is light on the other side, and Iboga helps us find it."
             author="Nzingo"
             variant="large"
           />
@@ -547,7 +547,7 @@ export const About: React.FC = () => {
             </p>
             <p>
               This is not about escaping life. It's about helping people return to
-              life—whole, present, sovereign, and awake.
+              life: whole, present, sovereign, and awake.
             </p>
           </motion.div>
         </div>
