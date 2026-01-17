@@ -18,6 +18,7 @@ import {
   Target,
   Compass,
   BookOpen,
+  Check,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
@@ -26,19 +27,67 @@ import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
 import { Accordion, AccordionItem } from '../components/ui/Accordion';
 
-const physicalBenefits = [
-  { icon: RefreshCcw, label: 'Cellular detoxification' },
-  { icon: Zap, label: 'Neurotransmitter reset' },
-  { icon: Shield, label: 'Anti-inflammatory properties' },
-  { icon: Leaf, label: 'Body cleansing & balancing' },
+const physicalBenefitsQuick = [
+  { icon: RefreshCcw, label: 'Creates neuroplasticity' },
+  { icon: Zap, label: 'Neuroregenerative' },
+  { icon: Shield, label: 'Physical cleanse & detox' },
+  { icon: Leaf, label: 'Cellular memory healing' },
 ];
 
-const mentalBenefits = [
-  { icon: Eye, label: 'See through self-deception' },
-  { icon: Brain, label: 'Clear mental fog' },
-  { icon: Sparkles, label: 'Return to natural clarity' },
-  { icon: RefreshCcw, label: 'Release attachments to past' },
+const mentalBenefitsQuick = [
+  { icon: Eye, label: 'Deeper understanding of self' },
+  { icon: Brain, label: 'Mental clarity' },
+  { icon: Sparkles, label: 'Quiets mental chatter' },
+  { icon: RefreshCcw, label: 'Helps break vicious cycles' },
 ];
+
+const comprehensiveBenefits = {
+  mental: [
+    'Cultivates a deeper understanding of self',
+    'Mental clarity',
+    'Helps you have better perspective on your life',
+    'Improves anxiety',
+    'Improves depression',
+    'Helps heal PTSD',
+    'Helps interrupt self-defeating behaviour patterns',
+    'Helps break vicious cycles + addictions',
+    'Helps you to navigate turning points and crossroads',
+    'Helps you to move through blockages',
+    'Psychological detox',
+    'Quiets mental chatter and overthinking',
+    'Helps you understand your purpose',
+    'Helps clear self-limiting / false beliefs',
+    'Softens perfectionism',
+    'Forgiveness of self and others',
+  ],
+  spiritual: [
+    'Soul integration',
+    'Third eye activation',
+    'Facilitates spiritual journeying',
+    'Helps you gain spiritual insight into your life',
+    'Deeply grounding',
+    'Deepens connection with life and nature',
+    'Clears negative energy',
+    'Provides ancestral / lineage healing',
+    'Clears blockages',
+    'Helps heal relationship with your soul',
+  ],
+  physical: [
+    'Creates neuroplasticity',
+    'Neuroregenerative',
+    'Causes a deep pattern interruption of dopaminergic neurological networks',
+    'Provides a physical cleanse / detox (anti-viral, anti-bacterial, anti-fungal)',
+    'Helps clear trauma and stagnant energy embedded in cellular memory',
+    'Nootropic: optimises brain functioning',
+    'Enhances endurance and stamina',
+    'Aids with improved sleep / wake cycle',
+    'Enhances sexual / reproductive function including libido',
+    'Cultivates a deeper connection to your body',
+    'Enhances comfort in own skin',
+    'Helps heal body shame issues',
+    'Improves a range of physical ailments',
+  ],
+};
 
 const healingCategories = [
   {
@@ -375,7 +424,7 @@ export const Iboga: React.FC = () => {
               <h3 className="font-accent text-xl text-cream">Physical Level</h3>
             </div>
             <div className="space-y-3">
-              {physicalBenefits.map((benefit) => (
+              {physicalBenefitsQuick.map((benefit) => (
                 <div key={benefit.label} className="flex items-center gap-3">
                   <benefit.icon className="w-5 h-5 text-sacred-gold/60" />
                   <span className="text-cream/80 font-secondary">{benefit.label}</span>
@@ -399,7 +448,7 @@ export const Iboga: React.FC = () => {
               <h3 className="font-accent text-xl text-cream">Mental Level</h3>
             </div>
             <div className="space-y-3">
-              {mentalBenefits.map((benefit) => (
+              {mentalBenefitsQuick.map((benefit) => (
                 <div key={benefit.label} className="flex items-center gap-3">
                   <benefit.icon className="w-5 h-5 text-sacred-gold/60" />
                   <span className="text-cream/80 font-secondary">{benefit.label}</span>
@@ -418,6 +467,89 @@ export const Iboga: React.FC = () => {
           This is not a quick fix. It's not recreational. It's deep, profound work—and
           it requires readiness, preparation, and proper guidance.
         </motion.p>
+      </Section>
+
+      {/* Comprehensive Benefits */}
+      <Section variant="earth">
+        <SectionHeading
+          title="What Are Some of the Benefits of Iboga?"
+          subtitle="Holistic Healing"
+          description="Iboga works simultaneously across mental, spiritual, and physical dimensions, providing comprehensive healing that addresses the whole person."
+          light
+        />
+
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+          {/* Mental Benefits */}
+          <motion.div
+            className="bg-forest-light/30 rounded-sacred p-6 md:p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                <Brain className="w-5 h-5 text-sacred-gold" />
+              </div>
+              <h3 className="font-accent text-xl text-cream">Mental</h3>
+            </div>
+            <ul className="space-y-3">
+              {comprehensiveBenefits.mental.map((benefit, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Leaf className="w-4 h-4 text-sacred-gold/60 mt-1 flex-shrink-0" />
+                  <span className="text-cream/80 font-secondary text-sm">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Spiritual Benefits */}
+          <motion.div
+            className="bg-forest-light/30 rounded-sacred p-6 md:p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-sacred-gold" />
+              </div>
+              <h3 className="font-accent text-xl text-cream">Spiritual</h3>
+            </div>
+            <ul className="space-y-3">
+              {comprehensiveBenefits.spiritual.map((benefit, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Leaf className="w-4 h-4 text-sacred-gold/60 mt-1 flex-shrink-0" />
+                  <span className="text-cream/80 font-secondary text-sm">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Physical Benefits */}
+          <motion.div
+            className="bg-forest-light/30 rounded-sacred p-6 md:p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                <Heart className="w-5 h-5 text-sacred-gold" />
+              </div>
+              <h3 className="font-accent text-xl text-cream">Physical</h3>
+            </div>
+            <ul className="space-y-3">
+              {comprehensiveBenefits.physical.map((benefit, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Leaf className="w-4 h-4 text-sacred-gold/60 mt-1 flex-shrink-0" />
+                  <span className="text-cream/80 font-secondary text-sm">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
       </Section>
 
       {/* Healing Categories */}
@@ -473,6 +605,79 @@ export const Iboga: React.FC = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+      </Section>
+
+      {/* Who's It For */}
+      <Section variant="default">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-sacred-gold font-accent text-sm uppercase tracking-[0.2em] mb-4">
+              Is Iboga Right For You?
+            </p>
+            <h2 className="font-accent text-h2 text-forest-deep mb-6">
+              Who's It For?
+            </h2>
+            <p className="text-lead text-bark max-w-2xl mx-auto">
+              These are signs Iboga may be of great help for you:
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid sm:grid-cols-2 gap-4 mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            {[
+              "You are ready to 'work on your life' / live a better life or your best life",
+              'You are open to change',
+              'You want to know the Truth',
+              'You want a deep recalibration - mind, body, and soul',
+              'You are seeking healing and wellness - mind, body, and soul',
+              'You have an intuitive calling to connect with Iboga and / or the Bwiti tradition',
+              'You are looking for optimization, growth and discovery',
+            ].map((sign, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-3 bg-cream-warm p-4 rounded-sacred border border-sacred-gold/10"
+              >
+                <Check className="w-5 h-5 text-sacred-gold mt-0.5 flex-shrink-0" />
+                <span className="text-bark font-primary">{sign}</span>
+              </div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            className="bg-forest-deep/5 rounded-sacred p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="flex items-start gap-4">
+              <Users className="w-8 h-8 text-sacred-gold flex-shrink-0 mt-1" />
+              <div className="space-y-4 text-bark font-primary leading-relaxed">
+                <p>
+                  To work with Iboga, you must be a good candidate health-wise.
+                  There are certain physical and psychological conditions, as
+                  well as drugs and medications that make it unsafe to work with
+                  Iboga.
+                </p>
+                <p>
+                  We will determine if you are a good candidate to safely work
+                  with Iboga after you complete your health assessment and
+                  intake consultation.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </Section>
 
@@ -636,8 +841,98 @@ export const Iboga: React.FC = () => {
         </div>
       </Section>
 
-      {/* Important Note */}
+      {/* How Is It Done? */}
       <Section variant="cream">
+        <SectionHeading
+          title="How Is It Done?"
+          subtitle="The Ceremonial Process"
+          description="Iboga is ideally done in a ceremonial context with providers who have received shamanic training and qualification by Bwiti teachers. This helps provide the best long-term results, safest experience, while at the same time honouring the medicine and tradition."
+        />
+
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-10">
+              <p className="text-bark font-primary text-lg leading-relaxed">
+                Iboga is a very long-lasting medicine. Both in its short-term processing time, and long-term influence on your life.
+              </p>
+            </div>
+
+            <div className="bg-cream-warm rounded-sacred p-8 border border-sacred-gold/10">
+              <h3 className="font-accent text-xl text-forest-deep mb-6 text-center">
+                Our Iboga healing sessions are one week long, and include two ceremonies:
+              </h3>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-cream rounded-sacred p-6 border border-sacred-gold/20">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-forest-deep/10 flex items-center justify-center">
+                      <span className="font-accent text-sacred-gold">1</span>
+                    </div>
+                    <h4 className="font-accent text-lg text-forest-deep">Detox Ceremony</h4>
+                  </div>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    Introduction to the medicine, clearing and cleansing mind, body and spirit.
+                  </p>
+                </div>
+
+                <div className="bg-cream rounded-sacred p-6 border border-sacred-gold/20">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-forest-deep/10 flex items-center justify-center">
+                      <span className="font-accent text-sacred-gold">2</span>
+                    </div>
+                    <h4 className="font-accent text-lg text-forest-deep">Psycho Spiritual Ceremony</h4>
+                  </div>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    Here we go deeper into psycho spiritual healing and discovery with the medicine.
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-bark font-primary text-center mt-6 leading-relaxed">
+                These two ceremonies work together to provide an optimal healing process.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-forest-deep/10 flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-6 h-6 text-sacred-gold" />
+                </div>
+                <div>
+                  <h4 className="font-accent text-lg text-forest-deep mb-2">Small Group Setting</h4>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    We work with a small group of up to 4 participants and provide counselling and support before, during and after the session.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-forest-deep/10 flex items-center justify-center flex-shrink-0">
+                  <RefreshCcw className="w-6 h-6 text-sacred-gold" />
+                </div>
+                <div>
+                  <h4 className="font-accent text-lg text-forest-deep mb-2">Long Integration Period</h4>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    Iboga has a long integration period of up to 6 months.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <Quote
+              text="Deciding to work with this medicine is one of the best gifts you can give yourself, and one of the best investments you can make in your life."
+            />
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Important Note */}
+      <Section variant="default">
         <div className="max-w-3xl mx-auto">
           <Card variant="default" className="border-l-4 border-l-caution">
             <div className="flex items-start gap-4">
