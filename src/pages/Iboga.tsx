@@ -13,6 +13,8 @@ import {
   Zap,
   TreeDeciduous,
   ArrowRight,
+  Check,
+  Users,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
@@ -315,6 +317,79 @@ export const Iboga: React.FC = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+      </Section>
+
+      {/* Who's It For */}
+      <Section variant="default">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-sacred-gold font-accent text-sm uppercase tracking-[0.2em] mb-4">
+              Is Iboga Right For You?
+            </p>
+            <h2 className="font-accent text-h2 text-forest-deep mb-6">
+              Who's It For?
+            </h2>
+            <p className="text-lead text-bark max-w-2xl mx-auto">
+              These are signs Iboga may be of great help for you:
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid sm:grid-cols-2 gap-4 mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            {[
+              "You are ready to 'work on your life' / live a better life or your best life",
+              'You are open to change',
+              'You want to know the Truth',
+              'You want a deep recalibration - mind, body, and soul',
+              'You are seeking healing and wellness - mind, body, and soul',
+              'You have an intuitive calling to connect with Iboga and / or the Bwiti tradition',
+              'You are looking for optimization, growth and discovery',
+            ].map((sign, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-3 bg-cream-warm p-4 rounded-sacred border border-sacred-gold/10"
+              >
+                <Check className="w-5 h-5 text-sacred-gold mt-0.5 flex-shrink-0" />
+                <span className="text-bark font-primary">{sign}</span>
+              </div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            className="bg-forest-deep/5 rounded-sacred p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="flex items-start gap-4">
+              <Users className="w-8 h-8 text-sacred-gold flex-shrink-0 mt-1" />
+              <div className="space-y-4 text-bark font-primary leading-relaxed">
+                <p>
+                  To work with Iboga, you must be a good candidate health-wise.
+                  There are certain physical and psychological conditions, as
+                  well as drugs and medications that make it unsafe to work with
+                  Iboga.
+                </p>
+                <p>
+                  We will determine if you are a good candidate to safely work
+                  with Iboga after you complete your health assessment and
+                  intake consultation.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </Section>
 
