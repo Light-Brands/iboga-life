@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Leaf, Mail, Phone, MapPin } from 'lucide-react';
+import { Leaf, Mail, Phone, MapPin, Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -105,6 +105,15 @@ export const Footer: React.FC = () => {
                   </p>
                 </div>
               </div>
+              <a
+                href="https://instagram.com/bwiti_iboga_provider"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-cream/70 hover:text-sacred-gold transition-colors group"
+              >
+                <Instagram className="w-5 h-5 text-sacred-gold/60 group-hover:text-sacred-gold transition-colors" />
+                <span className="font-secondary text-sm">@bwiti_iboga_provider</span>
+              </a>
             </div>
 
             {/* CTA */}

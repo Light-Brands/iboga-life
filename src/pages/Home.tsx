@@ -12,6 +12,7 @@ import {
   Users,
   Sunrise,
   Calendar,
+  Instagram,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
@@ -407,6 +408,37 @@ export const Home: React.FC = () => {
               index={index}
             />
           ))}
+        </div>
+      </Section>
+
+      {/* Instagram Follow Section */}
+      <Section variant="cream">
+        <div className="max-w-2xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-sacred-gold/20 to-sacred-amber/20 flex items-center justify-center mx-auto mb-6">
+              <Instagram className="w-8 h-8 text-sacred-gold" />
+            </div>
+            <h2 className="font-accent text-h3 text-forest-deep mb-4">
+              Follow the Journey
+            </h2>
+            <p className="text-bark font-primary text-body leading-relaxed mb-8">
+              Stay connected with ceremony updates, healing insights, and the Bwiti wisdom tradition.
+              Follow Jay on Instagram for behind-the-scenes moments and inspirational content.
+            </p>
+            <a
+              href="https://instagram.com/bwiti_iboga_provider"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-forest-deep hover:bg-forest-light text-cream font-secondary uppercase tracking-wider px-8 py-4 rounded-sacred transition-all duration-300 group"
+            >
+              <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              @bwiti_iboga_provider
+            </a>
+          </motion.div>
         </div>
       </Section>
 
