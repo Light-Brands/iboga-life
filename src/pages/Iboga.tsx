@@ -13,14 +13,19 @@ import {
   Zap,
   TreeDeciduous,
   ArrowRight,
-  Check,
+  Music,
   Users,
+  Target,
+  Compass,
+  BookOpen,
+  Check,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
+import { Accordion, AccordionItem } from '../components/ui/Accordion';
 
 const physicalBenefitsQuick = [
   { icon: RefreshCcw, label: 'Creates neuroplasticity' },
@@ -204,36 +209,188 @@ export const Iboga: React.FC = () => {
             transition={{ delay: 0.2 }}
           >
             <p>
-              Known as the Chief of plant medicines, also as 'Doctor Iboga,' Iboga
-              uniquely delivers spiritual, mental, and physical healing, growth and
-              optimization - at once. In essence, Iboga is known to connect you with
-              the truth. It is the only known plant medicine to have both male and
-              female spirit.
+              Iboga is one of the most powerful master plant medicines on Earth.
+              Originating in Gabon, Central Africa, Iboga has been used for thousands
+              of years within the Bwiti tradition for healing, initiation, and awakening.
+              Known as the "Tree of Knowledge," Iboga helps people reconnect with their
+              true selves, break destructive patterns, and step into the life they were
+              meant to live.
             </p>
             <p>
-              Iboga is a medicine that offers a powerful mind-body detox, as well as
-              soul integration, physical healing, and spiritual discovery. Many people
-              credit it to saving their life, or transforming their life for the better.
+              Iboga is not a psychedelic in the recreational sense. Instead, it is a
+              teacher — a plant that works with the mind, body, and soul to reveal
+              truth and create deep, lasting transformation. It shows you what you need
+              to see, not necessarily what you want to see — but always with the
+              intention of healing and truth.
             </p>
-            <p>
-              When provided in a good manner, by well-trained practitioners, this
-              medicine helps heal many of our society's common problems, such as
-              anxiety, depression, addictions, and various physical ailments. It is
-              the plant medicine most renowned for helping people make and maintain
-              positive long-term changes in their life.
-            </p>
-            <p>
-              Many people also experience a spiritual calling to this medicine, and
-              seek it not for healing, but for growth, discovery, and peak performance
-              in life.
-            </p>
-            <p>
-              Iboga is simply the bark of a root from a small shrub-like tree which
-              grows in West Coast Equatorial Africa. The people of the region have
-              been using Iboga for thousands upon thousands of years for all types of
-              healing as well as spiritual discovery. It's a sacrament used for the
-              wellness of the whole community, not reserved to people with problems.
-            </p>
+          </motion.div>
+
+          {/* A Master Teacher - Condensed into Accordion */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="mb-10"
+          >
+            <Accordion>
+              <AccordionItem title="What Iboga Helps With" icon={Sparkles} defaultOpen>
+                <ul className="space-y-2 mt-2">
+                  <li className="flex items-start gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>See your life with clarity</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Heal unresolved trauma</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Release emotional burdens</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Rewire destructive habits and addictions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Remember who you truly are beneath pain and struggle</span>
+                  </li>
+                </ul>
+              </AccordionItem>
+
+              <AccordionItem title="How Iboga Works" icon={Brain}>
+                <p className="mb-4">
+                  Iboga interacts with the brain's neurochemistry in a unique way:
+                </p>
+                <ul className="space-y-2 mb-4">
+                  <li className="flex items-start gap-2">
+                    <Zap className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>It can reset and rebalance the nervous system</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <RefreshCcw className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>It supports interruption of opioid and other addictions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Brain className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>It enhances neuroplasticity, allowing the brain to create new, healthier pathways</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Eye className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>It clears the mind, grounding a person back into their body and their truth</span>
+                  </li>
+                </ul>
+                <p>
+                  At the spiritual level, Iboga opens a connection to one's soul and inner
+                  wisdom. It helps people confront their past, understand their patterns,
+                  and step forward without the weight they've been carrying.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="Ceremony & Guidance" icon={Flame}>
+                <p className="mb-4">
+                  Iboga should never be taken casually or without proper guidance. In the
+                  Bwiti tradition, the medicine is held with deep reverence and always
+                  served with:
+                </p>
+                <div className="grid sm:grid-cols-2 gap-2">
+                  <div className="flex items-center gap-2">
+                    <Shield className="w-4 h-4 text-sacred-gold" />
+                    <span>Preparation</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Flame className="w-4 h-4 text-sacred-gold" />
+                    <span>Ceremony & Fire</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Music className="w-4 h-4 text-sacred-gold" />
+                    <span>Music</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Heart className="w-4 h-4 text-sacred-gold" />
+                    <span>Protection</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-sacred-gold" />
+                    <span>Experienced Guidance</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <RefreshCcw className="w-4 h-4 text-sacred-gold" />
+                    <span>Integration Support</span>
+                  </div>
+                </div>
+              </AccordionItem>
+
+              <AccordionItem title="Healing Through Truth" icon={Eye}>
+                <p className="mb-4">
+                  Iboga doesn't give false comfort. It brings truth forward so real healing
+                  can happen. This can manifest as:
+                </p>
+                <ul className="space-y-2 mb-4">
+                  <li className="flex items-start gap-2">
+                    <Heart className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Emotional release</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Sparkles className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Powerful insights</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Eye className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Revisiting past memories</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Target className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Seeing patterns clearly</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Compass className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Receiving guidance from one's own spirit</span>
+                  </li>
+                </ul>
+                <p>
+                  When the medicine completes its work, people often feel lighter, more
+                  grounded, and more connected to themselves than they have in years.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="A Path Forward" icon={ArrowRight}>
+                <p className="mb-4">
+                  Those who complete an Iboga journey frequently describe:
+                </p>
+                <div className="grid sm:grid-cols-2 gap-2">
+                  <div className="flex items-center gap-2">
+                    <Brain className="w-4 h-4 text-sacred-gold" />
+                    <span>Mental clarity</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Target className="w-4 h-4 text-sacred-gold" />
+                    <span>Renewed purpose</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Heart className="w-4 h-4 text-sacred-gold" />
+                    <span>Emotional peace</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <RefreshCcw className="w-4 h-4 text-sacred-gold" />
+                    <span>Reset from addiction</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-sacred-gold" />
+                    <span>Deep spiritual connection</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold" />
+                    <span>A fresh start in life</span>
+                  </div>
+                </div>
+                <p className="mt-4">
+                  Iboga gives you the opportunity to stop running from your pain and finally
+                  face it, heal it, and move forward with strength.
+                </p>
+              </AccordionItem>
+            </Accordion>
           </motion.div>
 
           <Quote
@@ -526,10 +683,11 @@ export const Iboga: React.FC = () => {
 
       {/* The Bwiti Tradition */}
       <Section variant="earth">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <p className="text-sacred-gold font-accent text-sm uppercase tracking-[0.2em] mb-4">
@@ -543,70 +701,143 @@ export const Iboga: React.FC = () => {
             <img
               src="/images/iboga-bwiti-ceremony.jpg"
               alt="Traditional Bwiti ceremony with sacred fire and tribal elements"
-              className="mb-6 w-full rounded-sacred object-cover aspect-[4/3]"
+              className="mb-8 w-full max-w-2xl mx-auto rounded-sacred object-cover aspect-[4/3]"
             />
 
-            <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed">
+            <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed text-left">
               <p>
-                Iboga does not work alone. It has been carried by a tradition for
-                millennia, which goes hand in hand with the medicine itself. For
-                thousands upon thousands of years, the Bwiti tradition, rooted in West
-                Coast Equatorial Africa, has been informed by Iboga, has stewarded
-                Iboga, and carries the teachings, music, and customs that make the
-                healing of Iboga so powerful and effective.
+                The Bwiti Tradition is an ancient spiritual path originating from the
+                forests of Gabon, Central Africa, carried for generations by the Fang,
+                Mitsogo, and Apinji peoples. It is not a religion in the Western sense,
+                but a way of life — a lived wisdom rooted in truth, self-knowledge, and
+                direct experience.
               </p>
               <p>
-                Bwiti means 'the study of life,' or 'the art of knowing.' This tradition
-                helps you cultivate a deep understanding of self, nature and life itself.
-              </p>
-              <p>
-                We travel to Gabon to learn this work directly from the Missoko Bwiti
-                tradition and conduct our ceremonies exactly how we have been taught.
+                At the heart of Bwiti is the understanding that everything we need is
+                already within us. The tradition guides people to remember who they truly
+                are beneath fear, trauma, addiction, and the stories that life places on
+                them. Rather than giving beliefs to follow, Bwiti opens the door for
+                people to see for themselves.
               </p>
             </div>
-
-            <Quote
-              text="Everything you need is already within you. The tradition guides people to remember who they truly are beneath fear, trauma, addiction, and the stories that life places on them."
-              variant="inline"
-            />
           </motion.div>
 
+          {/* Bwiti Details in Accordions */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <Card variant="sacred" className="text-center">
-              <TreeDeciduous className="w-16 h-16 text-sacred-gold mx-auto mb-6" />
-              <h3 className="font-accent text-2xl text-cream mb-4">
-                Missoko Bwiti Tradition
-              </h3>
-              <p className="text-cream/70 font-primary leading-relaxed mb-8">
-                An ancient spiritual tradition from Gabon that uses the Iboga plant for
-                healing, self-discovery, and connection to the greater mysteries of
-                existence.
-              </p>
-              <div className="space-y-4 text-left">
-                <div className="flex items-center gap-3 text-cream/80">
-                  <Flame className="w-5 h-5 text-sacred-gold" />
-                  <span className="font-secondary">Sacred fire ceremonies</span>
+            <Accordion>
+              <AccordionItem title="Iboga: The Teacher Plant" icon={TreeDeciduous} variant="sacred" defaultOpen>
+                <p className="mb-4">
+                  The sacred plant medicine Iboga is central within the Bwiti path. It is
+                  known as the "Tree of Knowledge," a master teacher that helps individuals
+                  reconnect with their soul, confront their truth, and release the burdens
+                  they've been carrying — sometimes for decades or even generations.
+                </p>
+                <p>
+                  Within the Bwiti, Iboga is not used casually or recreationally. It is
+                  taken with deep reverence, ceremony, and preparation. Traditionally
+                  trained providers support guests spiritually, emotionally, and physically
+                  through the process, ensuring safety, clarity, and guidance.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="A Tradition Built on Truth" icon={Eye} variant="sacred">
+                <p className="mb-4">
+                  Bwiti doesn't preach dogma. Instead, it teaches truth through direct experience:
+                </p>
+                <ul className="space-y-2 mb-4">
+                  <li className="flex items-start gap-2">
+                    <Eye className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Knowing yourself</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Target className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Seeing your life clearly</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Compass className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Understanding your purpose</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <RefreshCcw className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Letting go of what no longer serves you</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Users className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Reconnecting with your soul and your ancestors</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Shield className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Living with honesty, integrity, and personal responsibility</span>
+                  </li>
+                </ul>
+                <p>
+                  Music, dance, fire, storytelling, and community all play important roles.
+                  These elements help open the senses, anchor the mind, and connect
+                  participants with the spiritual world.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="A Path of Healing & Awakening" icon={Heart} variant="sacred">
+                <p className="mb-4">
+                  Many people come to Bwiti seeking healing from:
+                </p>
+                <div className="grid sm:grid-cols-2 gap-2 mb-4">
+                  <div className="flex items-center gap-2">
+                    <Flame className="w-4 h-4 text-sacred-gold" />
+                    <span>Addiction</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Heart className="w-4 h-4 text-sacred-gold" />
+                    <span>Trauma</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Brain className="w-4 h-4 text-sacred-gold" />
+                    <span>Depression</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-sacred-gold" />
+                    <span>Disconnection</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <RefreshCcw className="w-4 h-4 text-sacred-gold" />
+                    <span>Patterns that keep repeating</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Compass className="w-4 h-4 text-sacred-gold" />
+                    <span>A loss of direction</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-3 text-cream/80">
-                  <Leaf className="w-5 h-5 text-sacred-gold" />
-                  <span className="font-secondary">Plant medicine wisdom</span>
-                </div>
-                <div className="flex items-center gap-3 text-cream/80">
-                  <Heart className="w-5 h-5 text-sacred-gold" />
-                  <span className="font-secondary">Ancestral connection</span>
-                </div>
-                <div className="flex items-center gap-3 text-cream/80">
-                  <Eye className="w-5 h-5 text-sacred-gold" />
-                  <span className="font-secondary">Direct spiritual experience</span>
-                </div>
-              </div>
-            </Card>
+                <p>
+                  Through Iboga and the teachings, they often gain clarity, peace, and a
+                  renewed sense of who they are.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="Preserving the Lineage" icon={BookOpen} variant="sacred">
+                <p>
+                  Traditionally trained Bwiti providers carry this knowledge with the
+                  highest respect. They serve as bridges between the ancient Gabonese
+                  wisdom and those searching for healing in the modern world. Their role
+                  is not to "fix" anyone, but to guide them back to themselves.
+                </p>
+                <p className="mt-4">
+                  We travel to Gabon to learn this work directly from the Missoko Bwiti
+                  tradition and conduct our ceremonies exactly how we have been taught,
+                  preserving the integrity of this sacred lineage.
+                </p>
+              </AccordionItem>
+            </Accordion>
           </motion.div>
+
+          <Quote
+            text="Everything you need is already within you. The tradition guides people to remember who they truly are beneath fear, trauma, addiction, and the stories that life places on them."
+            variant="large"
+          />
         </div>
       </Section>
 

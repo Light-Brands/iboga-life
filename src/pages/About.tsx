@@ -10,12 +10,18 @@ import {
   Leaf,
   Star,
   ArrowRight,
+  Globe,
+  Users,
+  Sparkles,
+  BookOpen,
+  Eye,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
 import { Quote } from '../components/ui/Quote';
 import { Card } from '../components/ui/Card';
 import { TestimonialCard } from '../components/ui/TestimonialCard';
+import { Accordion, AccordionItem } from '../components/ui/Accordion';
 
 const coreValues = [
   {
@@ -297,6 +303,162 @@ export const About: React.FC = () => {
               </div>
             </Card>
           </motion.div>
+        </div>
+      </Section>
+
+      {/* Moughenda Expanded Section */}
+      <Section variant="earth">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-sacred-gold font-accent text-sm uppercase tracking-[0.2em] mb-4">
+              The Lineage
+            </p>
+            <h2 className="font-accent text-h2 text-cream mb-6">
+              Moughenda – 10th Generation Bwiti Shaman
+            </h2>
+
+            <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed text-left">
+              <p>
+                Moughenda is one of the most respected and recognized 10th-generation Bwiti
+                Shamans in the world — a true carrier of ancient wisdom, lineage, and
+                tradition. Born into a long line of Bwiti healers in Gabon, Central Africa,
+                he was raised within the sacred teachings, ceremonies, and responsibilities
+                of the Missoko Bwiti tradition. From a young age, it was clear that his
+                path was not chosen by him — it was chosen for him.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Moughenda Details in Accordions */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <Accordion>
+              <AccordionItem title="A Living Bridge to Ancient Wisdom" icon={BookOpen} variant="sacred" defaultOpen>
+                <p className="mb-4">
+                  As a 10th-generation shaman, Moughenda stands as a living bridge between
+                  the old world and the modern world. He carries a lineage that has been
+                  passed down through centuries — the medicine, the teachings, the rituals,
+                  and most importantly, the truth that lies at the heart of the Bwiti tradition.
+                </p>
+                <p>
+                  His role is not simply to serve Iboga. His role is to guard the tradition,
+                  protect the tree, preserve the teachings, and guide seekers back to
+                  themselves through truth, discipline, and spirit.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="A Teacher With Global Impact" icon={Globe} variant="sacred">
+                <p className="mb-4">Moughenda is known around the world for:</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <TreeDeciduous className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>His mastery of Iboga</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Sparkles className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>His deep understanding of the spiritual world</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Heart className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>His ability to guide people through profound healing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Shield className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>His grounded presence and unwavering commitment to truth</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Users className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>His leadership in protecting the Bwiti tradition</span>
+                  </li>
+                </ul>
+                <p className="mt-4">
+                  He has supported thousands of people — from those struggling with addiction
+                  to those seeking purpose, clarity, healing, or reconnection with their soul.
+                  His guidance helps people see themselves clearly, release years of emotional
+                  weight, and step into the light of who they truly are.
+                </p>
+              </AccordionItem>
+
+              <AccordionItem title="A Pillar of Strength, Wisdom & Compassion" icon={Heart} variant="sacred">
+                <p className="mb-4">
+                  What makes Moughenda truly powerful is not just his lineage — it's his heart.
+                  He teaches through humility, directness, humor, and compassion. He leads with
+                  honesty, integrity, and a deep love for humanity. His presence carries both
+                  the strength of a warrior and the gentleness of a healer.
+                </p>
+                <p className="mb-4">Those who have worked with him describe:</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <Shield className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Feeling safe in his presence</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Eye className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Receiving truth without judgment</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Sparkles className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Experiencing life-changing transformation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Heart className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Feeling deeply connected to themselves and to spirit</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <BookOpen className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Understanding the teachings in a way they never have before</span>
+                  </li>
+                </ul>
+              </AccordionItem>
+
+              <AccordionItem title="Protecting Iboga, The Tree of Knowledge" icon={TreeDeciduous} variant="sacred">
+                <p className="mb-4">
+                  Moughenda has dedicated his life to preserving and protecting Iboga, the
+                  sacred master plant of the Bwiti. He carries the responsibility of ensuring
+                  that the medicine is served correctly, with respect, ceremony, and the
+                  guidance of true lineage.
+                </p>
+                <p className="mb-4">His leadership has played a major role in:</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <Leaf className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Preserving Bwiti traditions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Users className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Training future providers</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <TreeDeciduous className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Protecting the Iboga tree in the forests of Gabon</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Globe className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Bringing authentic knowledge to the world</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Shield className="w-4 h-4 text-sacred-gold mt-1 flex-shrink-0" />
+                    <span>Ensuring the medicine stays true to its origins</span>
+                  </li>
+                </ul>
+              </AccordionItem>
+            </Accordion>
+          </motion.div>
+
+          <Quote
+            text="To serve Iboga is to serve truth itself. The medicine doesn't lie, and neither should the one who serves it."
+            author="Moughenda Mikala"
+            variant="large"
+          />
         </div>
       </Section>
 
