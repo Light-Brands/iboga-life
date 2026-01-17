@@ -1,5 +1,5 @@
 /* Google Fonts Import - must be first */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Rubik+Moonrocks&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Righteous&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -32,7 +32,7 @@
   --alert: #8B4513;
 
   /* Typography */
-  --font-display: 'Rubik Moonrocks', cursive;
+  --font-display: 'Righteous', cursive;
   --font-primary: 'Cormorant Garamond', Georgia, serif;
   --font-secondary: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   --font-accent: 'Cinzel', serif;
