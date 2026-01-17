@@ -20,19 +20,67 @@ import { SectionHeading } from '../components/ui/SectionHeading';
 import { Card } from '../components/ui/Card';
 import { Quote } from '../components/ui/Quote';
 
-const physicalBenefits = [
-  { icon: RefreshCcw, label: 'Cellular detoxification' },
-  { icon: Zap, label: 'Neurotransmitter reset' },
-  { icon: Shield, label: 'Anti-inflammatory properties' },
-  { icon: Leaf, label: 'Body cleansing & balancing' },
+const physicalBenefitsQuick = [
+  { icon: RefreshCcw, label: 'Creates neuroplasticity' },
+  { icon: Zap, label: 'Neuroregenerative' },
+  { icon: Shield, label: 'Physical cleanse & detox' },
+  { icon: Leaf, label: 'Cellular memory healing' },
 ];
 
-const mentalBenefits = [
-  { icon: Eye, label: 'See through self-deception' },
-  { icon: Brain, label: 'Clear mental fog' },
-  { icon: Sparkles, label: 'Return to natural clarity' },
-  { icon: RefreshCcw, label: 'Release attachments to past' },
+const mentalBenefitsQuick = [
+  { icon: Eye, label: 'Deeper understanding of self' },
+  { icon: Brain, label: 'Mental clarity' },
+  { icon: Sparkles, label: 'Quiets mental chatter' },
+  { icon: RefreshCcw, label: 'Helps break vicious cycles' },
 ];
+
+const comprehensiveBenefits = {
+  mental: [
+    'Cultivates a deeper understanding of self',
+    'Mental clarity',
+    'Helps you have better perspective on your life',
+    'Improves anxiety',
+    'Improves depression',
+    'Helps heal PTSD',
+    'Helps interrupt self-defeating behaviour patterns',
+    'Helps break vicious cycles + addictions',
+    'Helps you to navigate turning points and crossroads',
+    'Helps you to move through blockages',
+    'Psychological detox',
+    'Quiets mental chatter and overthinking',
+    'Helps you understand your purpose',
+    'Helps clear self-limiting / false beliefs',
+    'Softens perfectionism',
+    'Forgiveness of self and others',
+  ],
+  spiritual: [
+    'Soul integration',
+    'Third eye activation',
+    'Facilitates spiritual journeying',
+    'Helps you gain spiritual insight into your life',
+    'Deeply grounding',
+    'Deepens connection with life and nature',
+    'Clears negative energy',
+    'Provides ancestral / lineage healing',
+    'Clears blockages',
+    'Helps heal relationship with your soul',
+  ],
+  physical: [
+    'Creates neuroplasticity',
+    'Neuroregenerative',
+    'Causes a deep pattern interruption of dopaminergic neurological networks',
+    'Provides a physical cleanse / detox (anti-viral, anti-bacterial, anti-fungal)',
+    'Helps clear trauma and stagnant energy embedded in cellular memory',
+    'Nootropic: optimises brain functioning',
+    'Enhances endurance and stamina',
+    'Aids with improved sleep / wake cycle',
+    'Enhances sexual / reproductive function including libido',
+    'Cultivates a deeper connection to your body',
+    'Enhances comfort in own skin',
+    'Helps heal body shame issues',
+    'Improves a range of physical ailments',
+  ],
+};
 
 const healingCategories = [
   {
@@ -217,7 +265,7 @@ export const Iboga: React.FC = () => {
               <h3 className="font-accent text-xl text-cream">Physical Level</h3>
             </div>
             <div className="space-y-3">
-              {physicalBenefits.map((benefit) => (
+              {physicalBenefitsQuick.map((benefit) => (
                 <div key={benefit.label} className="flex items-center gap-3">
                   <benefit.icon className="w-5 h-5 text-sacred-gold/60" />
                   <span className="text-cream/80 font-secondary">{benefit.label}</span>
@@ -241,7 +289,7 @@ export const Iboga: React.FC = () => {
               <h3 className="font-accent text-xl text-cream">Mental Level</h3>
             </div>
             <div className="space-y-3">
-              {mentalBenefits.map((benefit) => (
+              {mentalBenefitsQuick.map((benefit) => (
                 <div key={benefit.label} className="flex items-center gap-3">
                   <benefit.icon className="w-5 h-5 text-sacred-gold/60" />
                   <span className="text-cream/80 font-secondary">{benefit.label}</span>
@@ -260,6 +308,89 @@ export const Iboga: React.FC = () => {
           This is not a quick fix. It's not recreational. It's deep, profound work—and
           it requires readiness, preparation, and proper guidance.
         </motion.p>
+      </Section>
+
+      {/* Comprehensive Benefits */}
+      <Section variant="earth">
+        <SectionHeading
+          title="What Are Some of the Benefits of Iboga?"
+          subtitle="Holistic Healing"
+          description="Iboga works simultaneously across mental, spiritual, and physical dimensions, providing comprehensive healing that addresses the whole person."
+          light
+        />
+
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+          {/* Mental Benefits */}
+          <motion.div
+            className="bg-forest-light/30 rounded-sacred p-6 md:p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                <Brain className="w-5 h-5 text-sacred-gold" />
+              </div>
+              <h3 className="font-accent text-xl text-cream">Mental</h3>
+            </div>
+            <ul className="space-y-3">
+              {comprehensiveBenefits.mental.map((benefit, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Leaf className="w-4 h-4 text-sacred-gold/60 mt-1 flex-shrink-0" />
+                  <span className="text-cream/80 font-secondary text-sm">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Spiritual Benefits */}
+          <motion.div
+            className="bg-forest-light/30 rounded-sacred p-6 md:p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-sacred-gold" />
+              </div>
+              <h3 className="font-accent text-xl text-cream">Spiritual</h3>
+            </div>
+            <ul className="space-y-3">
+              {comprehensiveBenefits.spiritual.map((benefit, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Leaf className="w-4 h-4 text-sacred-gold/60 mt-1 flex-shrink-0" />
+                  <span className="text-cream/80 font-secondary text-sm">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Physical Benefits */}
+          <motion.div
+            className="bg-forest-light/30 rounded-sacred p-6 md:p-8 border border-sacred-gold/10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                <Heart className="w-5 h-5 text-sacred-gold" />
+              </div>
+              <h3 className="font-accent text-xl text-cream">Physical</h3>
+            </div>
+            <ul className="space-y-3">
+              {comprehensiveBenefits.physical.map((benefit, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Leaf className="w-4 h-4 text-sacred-gold/60 mt-1 flex-shrink-0" />
+                  <span className="text-cream/80 font-secondary text-sm">{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
       </Section>
 
       {/* Healing Categories */}
