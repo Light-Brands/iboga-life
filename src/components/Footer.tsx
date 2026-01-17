@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
             </p>
             <blockquote className="text-sacred-gold italic font-primary text-lg">
               "We don't have to stay stuck in our suffering. There is light on the
-              other side—and Iboga helps us find it."
+              other side, and Iboga helps us find it."
             </blockquote>
           </div>
 

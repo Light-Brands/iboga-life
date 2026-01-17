@@ -130,7 +130,7 @@ export const Contact: React.FC = () => {
             <div className="space-y-6 text-bark font-primary text-lg leading-relaxed">
               <p>
                 Reaching out isn't easy. It means something inside you knows there's
-                another way—and that takes courage.
+                another way, and that takes courage.
               </p>
               <p>
                 I'm here to listen, answer your questions honestly, and help you
@@ -138,7 +138,7 @@ export const Contact: React.FC = () => {
                 Just genuine conversation about where you are and what might help.
               </p>
               <p className="text-sacred-gold italic">
-                "Thanks for reaching out—that first step takes real courage."
+                "Thanks for reaching out. That first step takes real courage."
               </p>
             </div>
           </motion.div>
