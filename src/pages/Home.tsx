@@ -346,7 +346,7 @@ export const Home: React.FC = () => {
             <img
               src="/images/jay-full-body.png"
               alt="Jay Nzingo - Iboga provider and spiritual guide"
-              className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-gold-glow"
+              className="w-60 h-60 rounded-full object-cover object-[center_15%] border-4 border-sacred-gold/30 shadow-gold-glow"
             />
           </motion.div>
 
