@@ -128,7 +128,7 @@ export const Home: React.FC = () => {
 
             {/* Sacred ceremony space image */}
             <img
-              src="/images/home-ceremony-space.jpg"
+              src="/images/around-the-table.JPG"
               alt="Sacred ceremony space with natural elements and soft lighting"
               className="mt-8 mb-6 w-full rounded-sacred object-cover aspect-[4/3]"
             />
@@ -344,7 +344,7 @@ export const Home: React.FC = () => {
             transition={{ delay: 0.1 }}
           >
             <img
-              src="/images/home-jay-portrait.jpg"
+              src="/images/jay-full-body.png"
               alt="Jay Nzingo - Iboga provider and spiritual guide"
               className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-gold-glow"
             />

@@ -122,7 +122,7 @@ export const Contact: React.FC = () => {
 
             {/* Connection image */}
             <img
-              src="/images/contact-connection.jpg"
+              src="/images/meetings.png"
               alt="Hands reaching out in connection and support"
               className="mb-8 max-w-xl mx-auto w-full rounded-sacred object-cover aspect-video"
             />
