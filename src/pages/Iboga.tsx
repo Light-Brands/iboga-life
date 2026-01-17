@@ -479,8 +479,98 @@ export const Iboga: React.FC = () => {
         </div>
       </Section>
 
-      {/* Important Note */}
+      {/* How Is It Done? */}
       <Section variant="cream">
+        <SectionHeading
+          title="How Is It Done?"
+          subtitle="The Ceremonial Process"
+          description="Iboga is ideally done in a ceremonial context with providers who have received shamanic training and qualification by Bwiti teachers. This helps provide the best long-term results, safest experience, while at the same time honouring the medicine and tradition."
+        />
+
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-10">
+              <p className="text-bark font-primary text-lg leading-relaxed">
+                Iboga is a very long-lasting medicine. Both in its short-term processing time, and long-term influence on your life.
+              </p>
+            </div>
+
+            <div className="bg-cream-warm rounded-sacred p-8 border border-sacred-gold/10">
+              <h3 className="font-accent text-xl text-forest-deep mb-6 text-center">
+                Our Iboga healing sessions are one week long, and include two ceremonies:
+              </h3>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-cream rounded-sacred p-6 border border-sacred-gold/20">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-forest-deep/10 flex items-center justify-center">
+                      <span className="font-accent text-sacred-gold">1</span>
+                    </div>
+                    <h4 className="font-accent text-lg text-forest-deep">Detox Ceremony</h4>
+                  </div>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    Introduction to the medicine, clearing and cleansing mind, body and spirit.
+                  </p>
+                </div>
+
+                <div className="bg-cream rounded-sacred p-6 border border-sacred-gold/20">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-forest-deep/10 flex items-center justify-center">
+                      <span className="font-accent text-sacred-gold">2</span>
+                    </div>
+                    <h4 className="font-accent text-lg text-forest-deep">Psycho Spiritual Ceremony</h4>
+                  </div>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    Here we go deeper into psycho spiritual healing and discovery with the medicine.
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-bark font-primary text-center mt-6 leading-relaxed">
+                These two ceremonies work together to provide an optimal healing process.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-forest-deep/10 flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-6 h-6 text-sacred-gold" />
+                </div>
+                <div>
+                  <h4 className="font-accent text-lg text-forest-deep mb-2">Small Group Setting</h4>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    We work with a small group of up to 4 participants and provide counselling and support before, during and after the session.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-forest-deep/10 flex items-center justify-center flex-shrink-0">
+                  <RefreshCcw className="w-6 h-6 text-sacred-gold" />
+                </div>
+                <div>
+                  <h4 className="font-accent text-lg text-forest-deep mb-2">Long Integration Period</h4>
+                  <p className="text-bark/80 font-secondary leading-relaxed">
+                    Iboga has a long integration period of up to 6 months.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <Quote
+              text="Deciding to work with this medicine is one of the best gifts you can give yourself, and one of the best investments you can make in your life."
+            />
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Important Note */}
+      <Section variant="default">
         <div className="max-w-3xl mx-auto">
           <Card variant="default" className="border-l-4 border-l-caution">
             <div className="flex items-start gap-4">
