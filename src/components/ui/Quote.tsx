@@ -35,6 +35,29 @@ export const Quote: React.FC<QuoteProps> = ({
     );
   }
 
+  if (variant === 'inline') {
+    return (
+      <motion.blockquote
+        className="border-l-3 border-sacred-gold pl-6 my-8"
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <p className="font-primary text-xl text-cream/90 leading-relaxed">
+          "{text}"
+        </p>
+        {author && (
+          <footer className="mt-4">
+            <span className="text-sacred-gold font-accent text-sm uppercase tracking-wider">
+              — {author}
+            </span>
+          </footer>
+        )}
+      </motion.blockquote>
+    );
+  }
+
   return (
     <motion.blockquote
       className="quote-sacred"
