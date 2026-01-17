@@ -13,6 +13,12 @@ export { FeatureCard } from './ui/FeatureCard';
 export { TestimonialCard } from './ui/TestimonialCard';
 export { ProcessStep } from './ui/ProcessStep';
 export {
+  Accordion,
+  AccordionItem,
+  AccordionGroup,
+  AccordionGroupItem,
+} from './ui/Accordion';
+export {
   ImagePlaceholder,
   HeroImagePlaceholder,
   PortraitPlaceholder,

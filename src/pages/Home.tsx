@@ -11,7 +11,6 @@ import {
   ArrowRight,
   Users,
   Sunrise,
-  Moon,
   Calendar,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
