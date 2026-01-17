@@ -37,7 +37,7 @@ export default {
       },
       // Typography
       fontFamily: {
-        display: ['Rubik Moonrocks', 'cursive'],
+        display: ['Righteous', 'cursive'],
         primary: ['Cormorant Garamond', 'Georgia', 'serif'],
         secondary: ['Source Sans Pro', 'Helvetica Neue', 'sans-serif'],
         accent: ['Cinzel', 'serif'],
