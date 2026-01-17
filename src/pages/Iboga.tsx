@@ -195,7 +195,7 @@ export const Iboga: React.FC = () => {
             transition={{ delay: 0.1 }}
           >
             <img
-              src="/images/iboga-plant.jpg"
+              src="/images/plants-on-truck.PNG"
               alt="The Iboga plant (Tabernanthe iboga) with its distinctive leaves and roots"
               className="max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-video"
             />
@@ -699,7 +699,7 @@ export const Iboga: React.FC = () => {
 
             {/* Bwiti ceremony image */}
             <img
-              src="/images/iboga-bwiti-ceremony.jpg"
+              src="/images/around-the-fire-ceremony.PNG"
               alt="Traditional Bwiti ceremony with sacred fire and tribal elements"
               className="mb-8 w-full max-w-2xl mx-auto rounded-sacred object-cover aspect-[4/3]"
             />

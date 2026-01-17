@@ -123,7 +123,7 @@ export const About: React.FC = () => {
             {/* Jay formal portrait */}
             <div className="flex justify-center mb-8">
               <img
-                src="/images/about-jay-formal.jpg"
+                src="/images/jay-full-body.png"
                 alt="Jason Nzingo Gho Majanja - formal portrait showing strength and compassion"
                 className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-lg"
               />
@@ -227,7 +227,7 @@ export const About: React.FC = () => {
 
             {/* Gabon temple image */}
             <img
-              src="/images/about-gabon-temple.jpg"
+              src="/images/ceremony.JPG"
               alt="Sacred Bwiti temple in Gabon surrounded by lush forest"
               className="mb-6 w-full rounded-sacred object-cover aspect-[4/3]"
             />
@@ -281,7 +281,7 @@ export const About: React.FC = () => {
                 {/* Moughenda portrait */}
                 <div className="flex justify-center mb-6">
                   <img
-                    src="/images/about-moughenda-portrait.jpg"
+                    src="/images/moughenda.PNG"
                     alt="Shaman Moughenda Mikala - 10th generation Bwiti shaman"
                     className="w-32 h-32 rounded-full object-cover border-4 border-sacred-gold/30"
                   />

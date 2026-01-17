@@ -393,7 +393,7 @@ export const Journey: React.FC = () => {
 
             {/* Ceremony space image */}
             <img
-              src="/images/journey-ceremony-space.jpg"
+              src="/images/moughenda-sitting.PNG"
               alt="Sacred ceremony space prepared for healing work"
               className="mt-8 max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-video"
             />
