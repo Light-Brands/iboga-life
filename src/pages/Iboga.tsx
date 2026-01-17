@@ -154,17 +154,35 @@ export const Iboga: React.FC = () => {
             transition={{ delay: 0.2 }}
           >
             <p>
-              In our modern world where depression, anxiety, addiction, and chronic
-              illness have become increasingly common, Iboga emerges as a powerful
-              medicine offering essential keys to restoring and maintaining health
-              within ourselves and our communities.
+              Known as the Chief of plant medicines, also as 'Doctor Iboga,' Iboga
+              uniquely delivers spiritual, mental, and physical healing, growth and
+              optimization - at once. In essence, Iboga is known to connect you with
+              the truth. It is the only known plant medicine to have both male and
+              female spirit.
             </p>
             <p>
-              Known as the "Tree of Knowledge" in the Bwiti tradition of West Africa,
-              Iboga has been used for thousands of years for healing and spiritual
-              initiation. This sacred plant works on multiple levels—physical, mental,
-              and spiritual—providing comprehensive healing that addresses the root
-              causes of suffering.
+              Iboga is a medicine that offers a powerful mind-body detox, as well as
+              soul integration, physical healing, and spiritual discovery. Many people
+              credit it to saving their life, or transforming their life for the better.
+            </p>
+            <p>
+              When provided in a good manner, by well-trained practitioners, this
+              medicine helps heal many of our society's common problems, such as
+              anxiety, depression, addictions, and various physical ailments. It is
+              the plant medicine most renowned for helping people make and maintain
+              positive long-term changes in their life.
+            </p>
+            <p>
+              Many people also experience a spiritual calling to this medicine, and
+              seek it not for healing, but for growth, discovery, and peak performance
+              in life.
+            </p>
+            <p>
+              Iboga is simply the bark of a root from a small shrub-like tree which
+              grows in West Coast Equatorial Africa. The people of the region have
+              been using Iboga for thousands upon thousands of years for all types of
+              healing as well as spiritual discovery. It's a sacrament used for the
+              wellness of the whole community, not reserved to people with problems.
             </p>
           </motion.div>
 
