@@ -63,7 +63,7 @@ const timeline = [
   {
     title: 'The Mission',
     content:
-      'Upon returning to Canada, Nzingo founded his own Iboga retreat practice, dedicated to helping others find freedom from their own struggles—whether addiction, trauma, anxiety, depression, or emotional stagnation. Through the wisdom of Iboga, he helps people reconnect with their true selves and remember who they are beyond pain and limitation.',
+      'Upon returning to Canada, Nzingo founded his own Iboga retreat practice, dedicated to helping others find freedom from their own struggles—whether it be addiction, trauma, anxiety, depression, or emotional stagnation. Through the wisdom of Iboga, he helps people reconnect with their true selves and remember who they are beyond pain and limitation.',
   },
 ];
 
