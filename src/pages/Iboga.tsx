@@ -197,7 +197,7 @@ export const Iboga: React.FC = () => {
             <img
               src="/images/plants-on-truck.PNG"
               alt="The Iboga plant (Tabernanthe iboga) with its distinctive leaves and roots"
-              className="max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-video"
+              className="max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-[4/5]"
             />
           </motion.div>
 
