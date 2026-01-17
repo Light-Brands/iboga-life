@@ -395,7 +395,7 @@ export const Journey: React.FC = () => {
             <img
               src="/images/moughenda-sitting.PNG"
               alt="Sacred ceremony space prepared for healing work"
-              className="mt-8 max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-video"
+              className="mt-8 max-w-2xl mx-auto w-full rounded-sacred object-cover aspect-[4/5]"
             />
           </motion.div>
 
