@@ -125,7 +125,7 @@ export const About: React.FC = () => {
               <img
                 src="/images/jay-full-body.png"
                 alt="Jason Nzingo Gho Majanja - formal portrait showing strength and compassion"
-                className="w-40 h-40 rounded-full object-cover border-4 border-sacred-gold/30 shadow-lg"
+                className="w-[400px] h-[400px] rounded-full object-cover object-[center_15%] border-4 border-sacred-gold/30 shadow-lg"
               />
             </div>
 
