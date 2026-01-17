@@ -342,20 +342,20 @@ export const Iboga: React.FC = () => {
 
             <div className="space-y-6 text-cream/80 font-primary text-body leading-relaxed">
               <p>
-                The Bwiti tradition originates from Gabon, West Africa, where Iboga has
-                been used for thousands of years for healing, spiritual initiation, and
-                connection to ancestral wisdom.
+                Iboga does not work alone. It has been carried by a tradition for
+                millennia, which goes hand in hand with the medicine itself. For
+                thousands upon thousands of years, the Bwiti tradition, rooted in West
+                Coast Equatorial Africa, has been informed by Iboga, has stewarded
+                Iboga, and carries the teachings, music, and customs that make the
+                healing of Iboga so powerful and effective.
               </p>
               <p>
-                Unlike modern approaches that might treat symptoms in isolation, the
-                Bwiti tradition views healing as a return to wholeness—reconnecting with
-                who we truly are beneath the layers of trauma, conditioning, and
-                suffering.
+                Bwiti means 'the study of life,' or 'the art of knowing.' This tradition
+                helps you cultivate a deep understanding of self, nature and life itself.
               </p>
               <p>
-                Jay was initiated into the Missoko Bwiti tradition under 10th-generation
-                Shaman Moughenda Mikala, carrying forward this sacred lineage with
-                reverence and responsibility.
+                We travel to Gabon to learn this work directly from the Missoko Bwiti
+                tradition and conduct our ceremonies exactly how we have been taught.
               </p>
             </div>
 
