@@ -10,6 +10,9 @@ import {
   Sparkles,
   ArrowRight,
   Users,
+  Sunrise,
+  Moon,
+  Calendar,
 } from 'lucide-react';
 import { Hero } from '../components/ui/Hero';
 import { Section } from '../components/ui/Section';
@@ -222,8 +225,103 @@ export const Home: React.FC = () => {
         </motion.div>
       </Section>
 
-      {/* Jay's Story Brief */}
+      {/* 6-Day Retreat Overview */}
       <Section variant="earth">
+        <SectionHeading
+          subtitle="The Experience"
+          title="6-Day Transformative Retreat"
+          description="A carefully crafted journey of ceremony, recovery, and integration in a safe, sacred environment."
+          light
+        />
+
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Days 1-2: Ceremony & Recovery */}
+            <motion.div
+              className="bg-forest-light/30 rounded-sacred p-6 border border-sacred-gold/20"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                  <Sunrise className="w-5 h-5 text-sacred-gold" />
+                </div>
+                <div>
+                  <p className="text-sacred-gold font-accent text-sm">Days 1-2</p>
+                  <h3 className="text-cream font-accent">Ceremony & Recovery</h3>
+                </div>
+              </div>
+              <p className="text-cream/70 font-primary text-sm leading-relaxed">
+                Welcome and first sacred Iboga ceremony with full medical supervision, followed by rest and gentle integration.
+              </p>
+            </motion.div>
+
+            {/* Days 3-4: Integration & Second Ceremony */}
+            <motion.div
+              className="bg-forest-light/30 rounded-sacred p-6 border border-sacred-gold/20"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                  <Flame className="w-5 h-5 text-sacred-gold" />
+                </div>
+                <div>
+                  <p className="text-sacred-gold font-accent text-sm">Days 3-4</p>
+                  <h3 className="text-cream font-accent">Integration & Ceremony</h3>
+                </div>
+              </div>
+              <p className="text-cream/70 font-primary text-sm leading-relaxed">
+                Group sharing, journaling, spa visit, then second sacred ceremony going deeper with the medicine.
+              </p>
+            </motion.div>
+
+            {/* Days 5-6: Recovery & Departure */}
+            <motion.div
+              className="bg-forest-light/30 rounded-sacred p-6 border border-sacred-gold/20"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                  <Calendar className="w-5 h-5 text-sacred-gold" />
+                </div>
+                <div>
+                  <p className="text-sacred-gold font-accent text-sm">Days 5-6</p>
+                  <h3 className="text-cream font-accent">Recovery & Departure</h3>
+                </div>
+              </div>
+              <p className="text-cream/70 font-primary text-sm leading-relaxed">
+                Final rest, integration sessions, future planning, and farewell as you begin your new chapter.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            className="text-center mt-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+          >
+            <Link
+              to="/journey"
+              className="inline-flex items-center gap-2 text-sacred-gold hover:text-sacred-amber font-secondary uppercase tracking-wider transition-colors"
+            >
+              View Full Retreat Schedule
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+        </div>
+      </Section>
+
+      {/* Jay's Story Brief */}
+      <Section variant="default">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -233,7 +331,7 @@ export const Home: React.FC = () => {
             <p className="text-sacred-gold font-accent text-sm uppercase tracking-[0.2em] mb-4">
               The Warrior's Path
             </p>
-            <h2 className="font-accent text-h2 text-cream mb-8">
+            <h2 className="font-accent text-h2 text-forest-deep mb-8">
               Meet Jay Nzingo
             </h2>
           </motion.div>
@@ -254,7 +352,7 @@ export const Home: React.FC = () => {
           </motion.div>
 
           <motion.div
-            className="space-y-6 text-cream/80 font-primary text-lg leading-relaxed mb-10"
+            className="space-y-6 text-bark font-primary text-lg leading-relaxed mb-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
