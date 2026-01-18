@@ -106,6 +106,7 @@ export const Contact: React.FC = () => {
         size="medium"
         backgroundImage="/images/Contact-hero-cropped.jpeg"
         mobileImagePosition="bottom"
+        desktopImagePosition="top"
       />
 
       {/* Personal Message */}
