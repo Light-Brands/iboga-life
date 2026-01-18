@@ -20,7 +20,7 @@ interface HeroProps {
   overlay?: 'dark' | 'light' | 'gradient';
   size?: 'full' | 'large' | 'medium';
   mobileImagePosition?: 'top' | 'center' | 'bottom';
-  desktopImagePosition?: 'top' | 'center' | 'bottom';
+  desktopImagePosition?: 'top' | 'center' | 'bottom' | string;
 }
 
 export const Hero: React.FC<HeroProps> = ({
@@ -54,22 +54,38 @@ export const Hero: React.FC<HeroProps> = ({
     >
       {/* Background */}
       {backgroundImage ? (
-        <div
-          className={`absolute inset-0 bg-cover bg-no-repeat ${
-            mobileImagePosition === 'top'
-              ? 'bg-top'
-              : mobileImagePosition === 'bottom'
-                ? 'bg-bottom'
-                : 'bg-center'
-          } ${
-            desktopImagePosition === 'top'
-              ? 'md:bg-top'
-              : desktopImagePosition === 'bottom'
-                ? 'md:bg-bottom'
-                : 'md:bg-center'
-          }`}
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        />
+        <>
+          {/* Mobile background */}
+          <div
+            className={`absolute inset-0 bg-cover bg-no-repeat md:hidden ${
+              mobileImagePosition === 'top'
+                ? 'bg-top'
+                : mobileImagePosition === 'bottom'
+                  ? 'bg-bottom'
+                  : 'bg-center'
+            }`}
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
+          {/* Desktop background */}
+          <div
+            className={`absolute inset-0 bg-cover bg-no-repeat hidden md:block ${
+              desktopImagePosition === 'top'
+                ? 'bg-top'
+                : desktopImagePosition === 'bottom'
+                  ? 'bg-bottom'
+                  : desktopImagePosition === 'center'
+                    ? 'bg-center'
+                    : ''
+            }`}
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              ...(desktopImagePosition &&
+                !['top', 'center', 'bottom'].includes(desktopImagePosition) && {
+                  backgroundPosition: `center ${desktopImagePosition}`,
+                }),
+            }}
+          />
+        </>
       ) : (
         <div className="absolute inset-0 bg-sacred-fire" />
       )}
