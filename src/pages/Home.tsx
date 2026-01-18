@@ -94,7 +94,7 @@ export const Home: React.FC = () => {
         secondaryCta={{ label: 'Learn About Iboga', to: '/iboga' }}
         showScrollIndicator
         size="full"
-        backgroundImage="/images/home-hero.jpg"
+        backgroundImage="/images/Home-hero-cropped.jpeg"
       />
 
       {/* Introduction Section */}

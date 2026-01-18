@@ -186,7 +186,7 @@ export const Journey: React.FC = () => {
         title="Your Healing Journey"
         description="From first conversation to lasting transformation, here's what to expect every step of the way."
         size="large"
-        backgroundImage="/images/journey-hero.jpg"
+        backgroundImage="/images/Journey-hero.jpeg"
       />
 
       {/* Introduction */}
