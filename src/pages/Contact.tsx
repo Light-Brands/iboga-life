@@ -105,6 +105,7 @@ export const Contact: React.FC = () => {
         description="That first step takes real courage. Reach out, and let's have an honest conversation about where you are."
         size="medium"
         backgroundImage="/images/Contact-hero-cropped.jpeg"
+        mobileImagePosition="top"
       />
 
       {/* Personal Message */}
