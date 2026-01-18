@@ -20,6 +20,7 @@ interface HeroProps {
   overlay?: 'dark' | 'light' | 'gradient';
   size?: 'full' | 'large' | 'medium';
   mobileImagePosition?: 'top' | 'center' | 'bottom';
+  desktopImagePosition?: 'top' | 'center' | 'bottom';
 }
 
 export const Hero: React.FC<HeroProps> = ({
@@ -33,6 +34,7 @@ export const Hero: React.FC<HeroProps> = ({
   overlay = 'gradient',
   size = 'full',
   mobileImagePosition,
+  desktopImagePosition = 'center',
 }) => {
   const sizeClasses = {
     full: 'min-h-screen',
@@ -55,10 +57,16 @@ export const Hero: React.FC<HeroProps> = ({
         <div
           className={`absolute inset-0 bg-cover bg-no-repeat ${
             mobileImagePosition === 'top'
-              ? 'bg-top md:bg-center'
+              ? 'bg-top'
               : mobileImagePosition === 'bottom'
-                ? 'bg-bottom md:bg-center'
+                ? 'bg-bottom'
                 : 'bg-center'
+          } ${
+            desktopImagePosition === 'top'
+              ? 'md:bg-top'
+              : desktopImagePosition === 'bottom'
+                ? 'md:bg-bottom'
+                : 'md:bg-center'
           }`}
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
