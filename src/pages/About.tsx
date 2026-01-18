@@ -101,7 +101,7 @@ export const About: React.FC = () => {
         title="Warrior Spirit, Compassionate Guide"
         description="Traditionally trained Iboga Bwiti provider, initiated and trained in 2021 under 10th-generation Shaman Moughenda Mikala in Gabon, Africa."
         size="large"
-        backgroundImage="/images/about-hero.jpg"
+        backgroundImage="/images/About-jay-hero.jpeg"
       />
 
       {/* Introduction */}

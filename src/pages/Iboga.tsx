@@ -167,7 +167,7 @@ export const Iboga: React.FC = () => {
         description="An ancient medicine from the Bwiti tradition, offering transformative healing for mind, body, and spirit."
         primaryCta={{ label: 'Begin Your Journey', to: '/contact' }}
         size="large"
-        backgroundImage="/images/iboga-hero.jpg"
+        backgroundImage="/images/iboga-hero.jpeg"
       />
 
       {/* Introduction */}
